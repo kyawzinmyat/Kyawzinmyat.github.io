@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,6 +12,39 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --color-primary: #9D61FF;
+  /* --color-primary: #a04def; */
+  --color-secondary: #fff;
+  --color-black: #000;
+}
+
+*{
+  font-family: sans-serif;
+}
+
+.primary-bg{
+  background-color: var(--color-primary);
+}
+
+.secondary-bg{
+  background-color: var(--color-secondary);
+}
+
+.black-bg{
+  background-color: var(--color-black);
+}
+
+.primary-color{
+  color: var(--color-primary);
+}
+
+.secondary-color{
+  color: var(--color-secondary)
+}
+
+.black-color{
+  color: var(--color-black)
 }
 
 a {
@@ -23,17 +56,21 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+body{
+  background-color: var(--color-secondary);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+@media (min-width: 768px){
+  .desktop-hide{
+    position: absolute;
+    /* top:100000px; */
+    visibility: hidden;
+  }
 }
 
 button {
@@ -68,6 +105,18 @@ button:focus-visible {
   }
 }
 
+@media (max-width:767px) {
+    .mobile-hide{
+      position: absolute;
+      top: 1000000px;
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.box{
+  width: min(100%, 1800px);
+  margin: 0 auto;
+}

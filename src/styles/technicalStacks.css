@@ -1,0 +1,8 @@
+.accordian{
+    max-height: 60px;
+    transition: max-height 2s;
+}
+
+.expand{
+    max-height: 900px;
+}
