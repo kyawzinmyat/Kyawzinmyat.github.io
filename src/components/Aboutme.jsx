@@ -3,11 +3,11 @@ import React from 'react'
 export default function Aboutme() {
     return (
         <div className='box my-[2em] py-[2em] black-color'>
-            <div className='w-8/12 mx-auto text-center'>
-                <h1 className='text-3xl font-extrabold'>A Brief Introduction of Myself</h1>
-                <div className='grid md:grid-cols-2 grid-cols-1 my-[4em] gap-10'>
+            <div className='md:w-8/12 w-10/12 mx-auto text-center'>
+                <h1 className='md:text-3xl text-lg font-extrabold'>A Brief Introduction of Myself</h1>
+                <div className='grid md:grid-cols-2 grid-cols-1 my-[4em] gap-y-10'>
                     <div className='primary-bg secondary-color rounded-[5px] shadow-md'>
-                        <h1 className='text-center text-2xl font-extrabold my-3'>Personal</h1>
+                        <h1 className='text-center text-lg md:text-2xl font-extrabold my-3'>Personal</h1>
                         <hr></hr>
                         <div className='xl:p-[4em] lg:p[5em] p-[3em] font-light text-sm md:text-md'>
                             <p>I'm currently 20 years old living in Kamayut Township, Yangon. Playing video games and learning about new technologies, such as networking, software, and computer architecture, are two of my passions.</p>
@@ -15,7 +15,7 @@ export default function Aboutme() {
                         </div>
                     </div>
                     <div className='primary-bg secondary-color rounded-[5px]'>
-                        <h1 className='text-2xl font-extrabold my-3'>Education</h1>
+                        <h1 className='text-lg md:text-2xl font-extrabold my-3'>Education</h1>
                         <hr></hr>
                         <div className='font-light xl:p-[4em] lg:p[5em] p-[3em] md:text-md text-sm'>
                             <p>In 2019, I earned my high school diploma.
@@ -24,7 +24,7 @@ export default function Aboutme() {
                         </div>
                     </div>
                     <div className='primary-bg secondary-color rounded-[5px] md:col-span-2'>
-                        <h1 className='text-2xl font-extrabold my-3'>Professional</h1>
+                        <h1 className='text-lg md:text-2xl font-extrabold my-3'>Professional</h1>
                         <hr></hr>
                         <div className='font-light text-sm md:text-md xl:px-[12em] lg:p[5em] p-[3em]'>
                             <p>My primary responsibilities include managing the timeline, maintaining communication with senior developers, and delivering the finished product on time while providing software implementations for customer demands via project manager and team leader. </p>

@@ -1,25 +1,33 @@
-import { useState } from 'react'
 import './App.css'
-import PrimaryButton from './components/buttons/PrimaryButton'
 import Navbar from './components/Navbar'
-import Landing from './components/Landing'
-import Aboutme from './components/Aboutme'
-import TechnicalStacks from './components/TechnicalStacks'
-import Certificates from './components/Certificates'
-import Goals from './components/Goals'
+import Aboutme from './pages/Aboutme'
 import Footer from './components/Footer'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './Home'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const router = createBrowserRouter([
+    {
+      path: "/aboutme",
+      element: <Aboutme/>
+    },
+    {
+      path: "/",
+      element: <Home/>
+    },
+  ]);  
+
 
   return (
     <>
       <Navbar></Navbar>
-      <Landing></Landing>
-      <Aboutme></Aboutme>
-      <TechnicalStacks></TechnicalStacks>
-      <Certificates></Certificates>
-      <Goals></Goals>
+        <RouterProvider router={router}>
+
+        </RouterProvider>
       <Footer></Footer>
     </>
   )

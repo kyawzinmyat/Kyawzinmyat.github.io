@@ -21,9 +21,9 @@ export default function TechnicalStacks() {
     return (
         <div className='m-5 p-5 box'>
             <div className='black-color'>
-                <h1 className='text-4xl font-extrabold text-center'>Technical Stack</h1>
-                <div className='w-4/12 my-5 mx-auto'>
-                    <p className='text-center  p-3 font-light'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
+                <h1 className='md:text-4xl text-md font-extrabold text-center'>Technical Stack</h1>
+                <div className='md:w-4/12 w-8/12 my-5 mx-auto'>
+                    <p className='text-center md:p-4 md:text-md font-light text-xs'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
                 </div>
             </div>
             <div className='secondary-color'>
@@ -59,23 +59,23 @@ export default function TechnicalStacks() {
                         <h1 className='text-sm md:text-xl font-bold text-center p-5'>Tools</h1>
                         <hr></hr>
                         <div className='p-5 md:text-[15px] text-[10px] font-extrabold'>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Visual Studio Code</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>pgAdmin</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Ubuntu</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Eclipse</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Figma</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Git</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Docker</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Visual Studio Code</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>pgAdmin</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Ubuntu</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Eclipse</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Figma</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Git</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Docker</h1>
                         </div>
                     </div>
                     <div id='accordian' className='accordian primary-bg rounded-[5px] row-span-1 '>
                         <h1 className='text-sm md:text-xl font-bold text-center p-5'>Soft Skills</h1>
                         <hr></hr>
                         <div className='p-5 md:text-[15px] text-[10px] font-extrabold'>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Communication</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Positive Attitude</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Time Management</h1>
-                            <h1 className='my-3 border-b-2 md:p-5 p-2'>Team Player</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Communication</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Positive Attitude</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Time Management</h1>
+                            <h1 className='my-3 border-b-2 md:p-5 p-1'>Team Player</h1>
                         </div>
                     </div>
                 </div>

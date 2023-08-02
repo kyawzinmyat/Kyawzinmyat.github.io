@@ -34,7 +34,7 @@ export default function Goals() {
 
     return (
         <div className=' w-8/12 mx-auto box my-5 secondary-color p-[3em]'>
-            <h1 className='font-extrabold black-color text-3xl text-center p-5 my-[3em]'>Personal Goals and Road Map</h1>
+            <h1 className='font-extrabold black-color text-lg md:text-3xl text-center p-5 my-[3em]'>Personal Goals and Road Map</h1>
             <div className='grid grid-rows-5 md:grid-cols-10 gap-[5em] p-5 secondary-color font-extrabold'>
                 <div className='mx-auto md:w-full bg-[#ec5656d3] md:col-start-5 md:col-span-4 row-start-1 rounded-lg first'>
                     <p className='p-7 '>start a professional software developer position in the US</p>

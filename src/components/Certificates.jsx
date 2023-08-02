@@ -4,7 +4,7 @@ import JavaImage from '../assets/java_oo.png'
 export default function Certificates() {
   return (
     <div className='black-color text-3xl text-center font-bold m-5 md:p-[5em] p-[2em] box'>
-        <h1 className='p-[2em]'>Certificates</h1>
+        <h1 className='p-[2em] md:text-3xl text-lg'>Certificates</h1>
         <div className='flex flex-wrap md:w-8/12 mx-auto gap-y-10 my-5'>
             <div className='shadow-lg md:w-1/3 w-full'>
                 <img src={CS50Image} alt='CS 50 Image'></img>
