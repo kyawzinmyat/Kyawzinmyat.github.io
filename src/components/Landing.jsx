@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/landing.css'
 import SteveImage from '../assets/STEVE.png'
-import CloudImage from '../assets/cloud.jpg'
 
 export default function Landing() {
   return (
