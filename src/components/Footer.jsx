@@ -15,7 +15,7 @@ export default function Footer() {
                 </div>
                 <div>
                         <ul>
-                            <li className='text-lg font-bold'></li>
+                            <li className='text-lg'></li>
                             <li className=''>
                                 < a href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`} className='inline-flex py-2 gap-2 items-center'>
                                     <FaEnvelope></FaEnvelope>kyawzinmyat00000001@gmail.com
