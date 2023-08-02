@@ -9,7 +9,7 @@ export default function Footer() {
         <div className='box primary-bg p-[3em] border-t-2'>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 my-[4em] gap-10'>
                 <div>
-                    <h1 className='py-2'>Kyaw Zin Myat</h1>
+                    <h1 className='py-2 text-lg'>Kyaw Zin Myat</h1>
                     <p className='py-2'>20 Years Old</p>
                     <p className='py-2'>Junior Software Developer</p>
                 </div>
