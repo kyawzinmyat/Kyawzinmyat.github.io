@@ -53,7 +53,7 @@ export default function Navbar() {
 
                 </div>
             </div>
-            <div id='hamburger' className='desktop-hide absolute top-12 left-[90%]' onClick={onClickHamburger}>
+            <div id='hamburger' className='desktop-hide  absolute top-12 left-[90%]' onClick={onClickHamburger}>
                 <Hamburger></Hamburger>
             </div>
         </div>
