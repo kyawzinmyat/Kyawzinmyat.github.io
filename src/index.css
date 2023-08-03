@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #24242476;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,9 +14,10 @@
   -webkit-text-size-adjust: 100%;
 
   --color-primary: #9D61FF;
+  --progress-graident-bar : linear-gradient(90deg, #9e61ffc5, #9D61FF);
   /* --color-primary: #a04def; */
   --color-secondary: #fff;
-  --color-black: #000;
+  --color-black:  #000000d3;
 }
 
 *{
@@ -45,6 +46,10 @@
 
 .black-color{
   color: var(--color-black)
+}
+
+.white-transparent-bg{
+  background-color: hsla(0, 0%, 100%, 0.916);
 }
 
 a {

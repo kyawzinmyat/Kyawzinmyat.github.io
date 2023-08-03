@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/aboutme.css'
 
 export default function Aboutme() {
     const mystyle = {
@@ -6,8 +7,8 @@ export default function Aboutme() {
     }
     return (
         <div className='box py-[2em] black-color' style={mystyle}>
-            <div className='md:w-8/12 w-10/12 mx-auto text-center' >
-                <h1 className='md:text-3xl text-lg font-extrabold secondary-color'>A Brief Introduction of Myself</h1>
+            <div className='md:w-8/12 w-10/12 mx-auto text-center about-me-container' >
+                <h1 className='md:text-3xl text-lg font-extrabold secondary-color' style={{zIndex:'999'}}>A Brief Introduction of Myself</h1>
                 <div className='grid md:grid-cols-2 grid-cols-1 my-[4em] md:gap-10 gap-y-10'>
                     
                     <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 secondary-bg black-color rounded-[5px] md:col-span-2 shadow-lg'>

@@ -1,3 +1,18 @@
+@keyframes linear-progress-bar-90{
+    0% {
+        width: 0%;
+        opacity: 0;
+        background-color: var(--color-secondary);
+    }
+
+    100%{
+        width: 90%;
+        opacity: 1;
+        background: var(--progress-graident-bar);
+        transform: scaleX(1);
+    }
+}
+
 @keyframes linear-progress-bar-80{
     0% {
         width: 0%;
@@ -8,12 +23,61 @@
     100%{
         width: 80%;
         opacity: 1;
-        background-color: var(--color-primary);
+        background: var(--progress-graident-bar);
         transform: scaleX(1);
     }
 }
 
+@keyframes linear-progress-bar-70{
+    0% {
+        width: 0%;
+        opacity: 0;
+        background-color: var(--color-secondary);
+    }
+
+    100%{
+        width: 70%;
+        opacity: 1;
+        background: var(--progress-graident-bar);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes linear-progress-bar-60{
+    0% {
+        width: 0%;
+        opacity: 0;
+        background-color: var(--color-secondary);
+    }
+
+    100%{
+        width: 60%;
+        opacity: 1;
+        background: var(--progress-graident-bar);
+        transform: scaleX(1);
+    }
+}
+
+.linear-progress-90{
+    border-radius: 10px;
+    animation-delay: 3s;
+    animation: linear-progress-bar-90  3s ease-in-out forwards;
+}
+
 .linear-progress-80{
     border-radius: 10px;
-    animation: linear-progress-bar-80  1s ease-in forwards;
+    animation-delay: 3s;
+    animation: linear-progress-bar-80  3s ease-in-out forwards;
+}
+
+.linear-progress-70{
+    border-radius: 10px;
+    animation-delay: 3s;
+    animation: linear-progress-bar-70  3s ease-in-out forwards;
+}
+
+.linear-progress-60{
+    border-radius: 10px;
+    animation-delay: 3s;
+    animation: linear-progress-bar-60  3s ease-in-out forwards;
 }
