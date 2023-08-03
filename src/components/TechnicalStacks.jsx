@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import '../styles/technicalStacks.css'
+import ProgressBar from './cards/ProgressBar';
 
 
 
@@ -20,7 +21,7 @@ export default function TechnicalStacks() {
     });
     return (
         <div className='m-5 p-5 box'>
-            <div className='black-color'>
+            {/* <div className='black-color'>
                 <h1 className='md:text-4xl text-md font-extrabold text-center primary-gradient-color'>Technical Stack</h1>
                 <div className='md:w-4/12 w-8/12 my-5 mx-auto'>
                     <p className='text-center md:p-4 md:text-md font-light text-xs'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
@@ -79,6 +80,9 @@ export default function TechnicalStacks() {
                         </div>
                     </div>
                 </div>
+            </div> */}
+            <div className=''>
+                <ProgressBar width='100px' height='10px'></ProgressBar>
             </div>
         </div>
     )

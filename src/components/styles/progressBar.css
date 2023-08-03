@@ -1,0 +1,19 @@
+@keyframes linear-progress-bar-80{
+    0% {
+        width: 0%;
+        opacity: 0;
+        background-color: var(--color-secondary);
+    }
+
+    100%{
+        width: 80%;
+        opacity: 1;
+        background-color: var(--color-primary);
+        transform: scaleX(1);
+    }
+}
+
+.linear-progress-80{
+    border-radius: 10px;
+    animation: linear-progress-bar-80  1s ease-in forwards;
+}

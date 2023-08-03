@@ -44,7 +44,7 @@ export default function Navbar() {
                     </div>
                     <ul className='hidden flex md:flex md:flex-row md:justify-evenly md:m-0 m-3 md:gap-0 gap-10 flex-col w-4/12 text-md' id='sub-nav'>
                         <li className='md:border-none border-b-2 border-indigo-200'><a className='font-extrabold' href='/'>Home</a></li>
-                        <li className='md:border-none border-b-2 border-indigo-200'><a className='font-extrabold' href=''>About Me</a></li>
+                        <li className='md:border-none border-b-2 border-indigo-200'><a className='font-extrabold' href='/aboutme'>About Me</a></li>
                         <li className='md:border-none border-b-2 border-indigo-200'><a className='font-extrabold' href=''>Projects</a></li>
                     </ul>
                     <div className='font-extrabold text-xl md:my-0 m-3 hidden md:block' id='sub-button'>
