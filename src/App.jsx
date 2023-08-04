@@ -19,7 +19,9 @@ function App() {
       path: "/",
       element: <Home/>
     },
-  ]);  
+  ], {
+    basename: '/'
+  });  
 
 
   return (
