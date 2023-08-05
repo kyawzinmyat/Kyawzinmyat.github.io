@@ -1,10 +1,15 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
 .progress-bar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 10px;
-    background: var(--primary-accent-color);
+    background: red;
     transform-origin: 0%;
-    z-index: 1000000;
   }

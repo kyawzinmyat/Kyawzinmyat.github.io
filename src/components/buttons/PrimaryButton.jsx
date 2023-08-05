@@ -1,7 +1,10 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function PrimaryButton({children}) {
   return (
-    <button className='btn primary-bg secondary-color hover:bg-white hover:text-black p-2 rounded-full h-12 my-2 text-center w-36'>{children}</button>
+    <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.7}} className='primary-accent-bg secondary-color outline-none p-2 border-none rounded-full h-12 my-2 text-center w-36'>
+          {children}
+    </motion.button>
   )
 }

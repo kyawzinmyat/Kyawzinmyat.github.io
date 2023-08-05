@@ -1,14 +1,62 @@
 .landing-body {
     background-repeat: no-repeat;
-    background-image:   
-                        url('../assets/landing.png');
-    height: 100%;
+    /* background-image:   linear-gradient(to bottom left , rgba(255, 255, 255, 0.337) 50%, var(--primary-accent-color) 50%, var(--primary-accent-color) 100%); */
     /* Full height */
-    min-height: 100vh;
-    overflow: hidden;
-    /* Center and scale the image nicely */
-    background-position: center;
+    width: 100%;
+    min-height: 100vh;    /* Center and scale the image nicely */
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+@keyframes landing-ani {
+    0% {
+        transform: rotateY(180deg);
+        background-color: var(--primary-accent-color);
+        backface-visibility: hidden;
+        z-index: 100;
+        width: 100%;
+    }
+
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes text-pop-ani {
+
+    0%{
+        transform: translateX(-1000px);
+        background-color: var(--secondary-accent-color);
+        color: var(--secondary-accent-color);
+    }
+
+    70%{
+        background-color: var(--secondary-accent-color);
+        color: var(--secondary-accent-color);
+        transform: translateX(1500px);
+    }
+
+    
+    71%{
+        background-color: white;
+        color: white;
+        transform: translateX(1000px);
+    }
+
+    100%{
+        transform: scaleX(1);
+        transform-origin: bottom center;
+    }
+}
+
+.landing-animation{
+    background-image:   linear-gradient(to bottom left , rgba(255, 255, 255, 0.337) 50%, var(--primary-accent-color) 50%, var(--primary-accent-color) 100%),
+    linear-gradient(to top left , rgba(255, 255, 255, 0.337) 50%, var(--primary-accent-color) 50%, var(--primary-accent-color) 100%);
+        animation: landing-ani .5s ease-in-out forwards;
+}
+
+.text-pop-animation{
+    animation: text-pop-ani 1s ease-in-out forwards;
+}

@@ -13,11 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --color-primary: #9D61FF;
+  --color-primary: #000;
   --progress-graident-bar : linear-gradient(90deg, #9e61ffc5, #9D61FF);
   /* --color-primary: #a04def; */
   --color-secondary: #fff;
-  --color-black:  #000000d3;
+  --color-black:  #5c3e84;
+  --primary-accent-color: #a04def;
+  --secondary-accent-color: #fee856;
 }
 
 *{
@@ -52,6 +54,22 @@
   background-color: hsla(0, 0%, 100%, 0.916);
 }
 
+.primary-accent-bg{
+  background-color: var(--primary-accent-color);
+}
+
+.secondary-accent-bg{
+  background-color: var(--secondary-accent-color);
+}
+
+.primary-accent-color{
+  color: var(--primary-accent-color);
+}
+
+.secondary-accent-color{
+  color: var(--secondary-accent-color);
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -62,7 +80,7 @@ a:hover {
 }
 
 .primary-gradient-color{
-  background-image: linear-gradient(90deg, var(--color-primary), var(--color-black));
+  background: linear-gradient(109.6deg, rgba(119, 44, 232, 0.68) 11.5%, rgb(119, 44, 232) 91.2%);
   background-clip: text;
   color: transparent;
 }

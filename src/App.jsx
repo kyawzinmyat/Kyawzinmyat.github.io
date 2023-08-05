@@ -1,16 +1,25 @@
 import './App.css'
 import Navbar from './components/Navbar'
-import Aboutme from './pages/Aboutme'
 import Footer from './components/Footer'
 import Home from './Home'
+import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 
 function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
   return (
-    <>
-      <Navbar></Navbar>
-      <Home></Home>
-      <Footer></Footer>
-    </>
+      <motion.div
+
+      >
+        <motion.div className="progress-bar" style={{ scaleX }} />
+        <Navbar></Navbar>
+        <Home></Home>
+        <Footer></Footer>
+      </motion.div>
   )
 }
 
