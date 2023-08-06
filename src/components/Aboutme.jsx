@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react'
 import { motion, useInView } from "framer-motion"
 import '../styles/aboutme.css'
-import SteveProfessionalImage from '../assets/steve_professional.png'
-
+import ProfessionalImage from '../assets/professional.png'
+import EducationImage from '../assets/education.png'
+import PersonalImage from '../assets/personal.png'
 
 export default function Aboutme() {
     const ref = useRef(null)
@@ -16,8 +17,8 @@ export default function Aboutme() {
             }}>
                 <h1 className='md:text-3xl text-lg font-extrabold primary-color'>A Brief Introduction of Myself</h1>
                 <div className='grid grid-cols-1 my-[4em] md:gap-10 gap-y-10'>
-                    <motion.div className='grid grid-cols-3 secondary-bg primary-color rounded-[5px] shadow-lg'>
-                        <img src={SteveProfessionalImage} alt='steve professioanl image' className='col-span-1'></img>
+                    <motion.div className='grid md:grid-cols-3 grid-cols-1 secondary-bg primary-color rounded-[5px] shadow-lg'>
+                        <img src={ProfessionalImage} alt='steve professioanl image' className='md:col-span-1'></img>
 
                         <div className='col-span-2'>
                             <motion.h1 initial="hidden"
@@ -34,8 +35,8 @@ export default function Aboutme() {
                         </div>
                     </motion.div>
 
-                    <motion.div className='grid grid-cols-3 secondary-bg primary-color rounded-[5px] shadow-lg'>
-                        <img src={SteveProfessionalImage} alt='steve professioanl image' className='col-span-1'></img>
+                    <motion.div className='grid md:grid-cols-3 grid-cols-1 secondary-bg primary-color rounded-[5px] shadow-lg'>
+                        <img src={PersonalImage} alt='steve professioanl image' className='md:col-span-1'></img>
 
                         <div className='col-span-2'>
                             <motion.h1 initial="hidden"
@@ -52,8 +53,8 @@ export default function Aboutme() {
                         </div>
                     </motion.div>
 
-                    <motion.div className='grid grid-cols-3 secondary-bg primary-color rounded-[5px] shadow-lg'>
-                        <img src={SteveProfessionalImage} alt='steve professioanl image' className='col-span-1'></img>
+                    <motion.div className='grid md:grid-cols-3 grid-cols-1 secondary-bg primary-color rounded-[5px] shadow-lg'>
+                        <img src={EducationImage} alt='steve professioanl image' className='md:col-span-1'></img>
 
                         <div className='col-span-2'>
                             <motion.h1 initial="hidden"
