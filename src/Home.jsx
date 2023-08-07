@@ -6,6 +6,7 @@ import Landing from './components/Landing'
 import Aboutme from './components/Aboutme'
 
 export default function Home() {
+  
   return (
     <>
     <Landing></Landing>

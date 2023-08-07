@@ -12,6 +12,7 @@
   "dependencies": {
     "@syncfusion/ej2": "^22.2.7",
     "@syncfusion/ej2-react-progressbar": "^22.2.5",
+    "framer-motion": "^10.15.0",
     "gh-pages": "^5.0.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
