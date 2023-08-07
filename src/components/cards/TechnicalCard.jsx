@@ -17,7 +17,7 @@ export default function TechnicalCard({ information, title }) {
     return (
         <div>
             <div id='accordian' className={classAccordian} onClick={onClickAccordian}>
-                <h1 className='text-sm md:text-xl font-medium text-center p-5 cursor-pointer h-[70px] primary-bg secondary-color'>{title}</h1>
+                <h1 className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-sm md:text-xl font-medium text-center p-5 cursor-pointer h-[70px] primary-bg secondary-color'>{title}</h1>
                 <hr></hr>
                 <div className='p-5 md:text-[15px] text-[10px] font-light'>
                     {information.map(

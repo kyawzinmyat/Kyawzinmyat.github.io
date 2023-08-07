@@ -82,6 +82,36 @@ h1 {
   line-height: 1.1;
 }
 
+.active-nav-section{
+  position: relative;
+}
+
+.active-nav-section::before{
+  content: ' ';
+  position: absolute;
+  bottom:0;
+  height: 5px;
+  left: 0;
+  right: 0;
+  background-color: var(--color-black);
+  border-radius: 20px;
+  animation: nav-active-ani 500ms ease-in forwards;
+}
+
+@keyframes nav-active-ani {
+  0%{
+    width: 0;
+    opacity: (0);
+    scale: (0);
+    background-color: var(--color-primary);
+  }
+  100%{
+    width: 100%;
+    opacity: (1);
+    scale: (1);
+  }
+}
+
 @media (min-width: 768px){
   .desktop-hide{
     position: absolute;

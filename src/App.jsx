@@ -7,7 +7,7 @@ import Home from './Home'
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar activePage='home'></Navbar>
       <Home></Home>
       <Footer></Footer>
     </>

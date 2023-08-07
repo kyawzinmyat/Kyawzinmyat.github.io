@@ -2,9 +2,10 @@ import React from 'react'
 import '../styles/aboutme.css'
 
 export default function Aboutme() {
-    const mystyle = {
-        background: 'radial-gradient(90% 90% at top center,transparent 92.5%, #fff 92.5%),linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary) 100%)',
+    let mystyle = {
+        background: 'radial-gradient(100% 100% at top center,transparent 95%, #fff 95.1%),linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary) 100%)',
     }
+
     return (
         <div className='box py-[2em] black-color' style={mystyle}>
             <div className='md:w-8/12 w-10/12 mx-auto text-center about-me-container' >
