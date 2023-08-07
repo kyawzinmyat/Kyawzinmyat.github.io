@@ -4,6 +4,8 @@ import Cell from './Cell';
 export default function Canvas() {
   const g = []
 
+  let [isDraw, setIsDraw] = useState(false);
+
   for (var i = 0; i < 28; i++){
     g.push([])
     for (var j = 0; j < 28; j++){
@@ -16,14 +18,19 @@ export default function Canvas() {
 
   }
 
+  const onClickCanvas = () => {
+    setIsDraw(!isDraw);
+  }
+
   return (
-    <div className='w-[560px]'>
+    <div className='w-[560px]' onClick={onClickCanvas}>
         <div className='flex flex-wrap'>
             {grids.map((grid, row) => {
                 return grid.map((g, col) => {
+                    const cell = React.cloneElement(g, {isDraw: isDraw})
                     return (
                         <div key={row + '/' + col}>
-                            {g}
+                            {cell}
                         </div>
                     )
                 })
