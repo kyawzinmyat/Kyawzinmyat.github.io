@@ -10,7 +10,7 @@ export default function ProjectCard({ title, mobileImg, img, description, techni
         if (img.length > mobileImg.length) {
             return img.map((image, index) => {
                 return (
-                    <div key={index} >
+                    <div key={index} className='flex justify-center items-center'>
                         <picture>
                             {index < mobileImg.length && <source className='w-[20%]' srcSet={mobileImg[index]} alt={title} media='(max-width:767px)'></source>
                             }

@@ -3,9 +3,8 @@ import Navbar from '../components/Navbar'
 import '../index.css'
 import { motion    } from 'framer-motion'
 import List from './List'
-import StockImage from '../assets/real _stock.png'
-import TictactoeImage from '../assets/tic-tac-toe.png'
 import  {PortfolioImagesDesktop, PortfolioImagesMobile}  from './PortfolioProject'
+import Canvas from './NeuralNetworkProject/Canvas'
 
 const projects = [
   {title: 'Portfolio Website', mobileImg: PortfolioImagesMobile, img: PortfolioImagesDesktop, description: "A professional website for my portfolio where I can introduce myself and highlight my abilities and experiences", technical: "React, Vite, HTML, CSS, Tailwind css, Framer"},
@@ -21,6 +20,9 @@ export default function Projects() {
       <h1 className='text-lg font-bold secondary-color text-center m-5 w-8/12 mx-auto p-5'>Here are a few projects I completed for my learning journal.</h1>
       <div>
         <List projects={projects}></List>
+      </div>
+      <div>
+        <Canvas></Canvas>
       </div>
     </motion.div>
   )
