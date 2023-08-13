@@ -2,7 +2,6 @@ import React from 'react'
 import { motion, transform } from 'framer-motion'
 import LaptopImage from '../assets/laptop.png'
 import PhoneImage from '../assets/phone.jpg'
-import { render } from 'react-dom'
 
 export default function ProjectCard({ title, mobileImg, img, description, technicals }) {
 
@@ -14,16 +13,11 @@ export default function ProjectCard({ title, mobileImg, img, description, techni
                         <picture>
                             {index < mobileImg.length && <source className='w-[20%]' srcSet={mobileImg[index]} alt={title} media='(max-width:767px)'></source>
                             }
-                            <motion.img
-                                initial={{ scale: 0.5, opacity: 0.7 }}
-                                whileInView={
-                                    { scale: 1, opacity: 1 }
-                                }
-                                viewport={{ once: true }}
-                                transition={{ duration: 1, delay: 0.1 }}
+                            <img
+
                                 alt={title}
                                 className='col-span-3 secondary-bg object-contain' src={image} >
-                            </motion.img>
+                            </img>
                         </picture>
                     </div>
                 )
@@ -35,22 +29,10 @@ export default function ProjectCard({ title, mobileImg, img, description, techni
                     <picture>
                         <source alt={title} className='w-[20%]' srcSet={image} media='(max-width:767px)'></source>
                         {
-                            index < img.length ? <motion.img
-                                initial={{ scale: 0.5, opacity: 0.7 }}
-                                whileInView={
-                                    { scale: 1, opacity: 1 }
-                                }
+                            index < img.length ? <img
                                 alt={title}
-                                viewport={{ once: true }}
-                                transition={{ duration: 1, delay: 0.1 }}
                                 className='col-span-3 secondary-bg object-contain' src={img[index]} >
-                            </motion.img> : <motion.img
-                                initial={{ scale: 0.5, opacity: 0.7 }}
-                                whileInView={
-                                    { scale: 1, opacity: 1 }
-                                }
-                            >
-                            </motion.img>
+                            </img> : <img></img>
                         }
                     </picture>
                 </div>
@@ -71,7 +53,7 @@ export default function ProjectCard({ title, mobileImg, img, description, techni
                     >
                         <h1 className='secondary-bg primary-color md:text-md sm-text-sm  font-bold secondary-accent-bg p-5 rounded-full'>{title}</h1>
                         <p className='lg:text-sm xl:text-lg w-[30ch] text-sm md:w-10/12 mx-auto lg:p-0  font-md py-5 md:p-5 lg:py-4'>{description}</p>
-                        <p className='lg:py-4 p-2 text-xs font-md'>Technolgies Using/ {technicals}</p>
+                        <p className='lg:py-4 p-2 text-xs font-md'>Technolgies Using/ </p><span>{technicals}</span>
                     </motion.div>
                 </motion.div>
             </div>

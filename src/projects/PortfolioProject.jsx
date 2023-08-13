@@ -1,7 +1,6 @@
 import PortfolioImage1 from '../assets/portfolio_project/portfolio-1.png'
 import PortfolioImage2 from '../assets/portfolio_project/portfolio-2.png'
 import PortfolioImage3 from '../assets/portfolio_project/portfolio-3.png'
-import PortfolioImage4 from '../assets/portfolio_project/portfolio-4.png'
 import PortfolioImage5 from '../assets/portfolio_project/portfolio-5.png'
 import PortfolioImage6 from '../assets/portfolio_project/portfolio-6.png'
 import PortfolioImage7 from '../assets/portfolio_project/portfolio-7.png'
@@ -23,7 +22,6 @@ var PortfolioImagesDesktop = [
     PortfolioImage1,
     PortfolioImage2,
     PortfolioImage3,
-    PortfolioImage4,
     PortfolioImage5,
     PortfolioImage6,
     PortfolioImage7,

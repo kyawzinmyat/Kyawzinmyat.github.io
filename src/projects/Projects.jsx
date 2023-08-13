@@ -5,6 +5,7 @@ import { motion    } from 'framer-motion'
 import List from './List'
 import  {PortfolioImagesDesktop, PortfolioImagesMobile}  from './PortfolioProject'
 import Canvas from './NeuralNetworkProject/Canvas'
+import NeuralNetworkProject from './NeuralNetworkProject/NeuralNetworkProject'
 
 const projects = [
   {title: 'Portfolio Website', mobileImg: PortfolioImagesMobile, img: PortfolioImagesDesktop, description: "A professional website for my portfolio where I can introduce myself and highlight my abilities and experiences", technical: "React, Vite, HTML, CSS, Tailwind css, Framer"},
@@ -17,12 +18,12 @@ export default function Projects() {
     <motion.div className='primary-bg box'>
       <Navbar></Navbar>
 
-      <h1 className='text-lg font-bold secondary-color text-center m-5 w-8/12 mx-auto p-5'>Here are a few projects I completed for my learning journal.</h1>
+      <h1 className='text-md lg:text-lg font-bold secondary-color text-center m-[1em] w-8/12 mx-auto p-2'>Here are a few projects I completed for my learning journal.</h1>
       <div>
         <List projects={projects}></List>
       </div>
       <div>
-        <Canvas></Canvas>
+        <NeuralNetworkProject></NeuralNetworkProject>
       </div>
     </motion.div>
   )
