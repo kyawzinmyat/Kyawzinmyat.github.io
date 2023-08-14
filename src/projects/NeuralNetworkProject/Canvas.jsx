@@ -2,10 +2,11 @@ import React, { useEffect, useRef, useState } from 'react'
 import Cell from './Cell';
 var cellWidth = 20;
 var cellHeight = 20;
+var width = 560;
 
-export default function Canvas({ clear, setPredictedNumber, socket_ }) {
+export default function Canvas({ clear, setPredictedNumber }) {
   let [isDraw, setIsDraw] = useState(false);
-  let [width, setWidth] = useState(560)
+  let [canvasWidth, setCanvasWidth] = useState(560)
   const generateEmptyGrid = () => {
     var g = [];
     for (var i = 0; i < 28; i++) {
@@ -20,18 +21,19 @@ export default function Canvas({ clear, setPredictedNumber, socket_ }) {
 
   const handleWindowResize = () => {
     if (window.innerWidth > 1200) {
-      setWidth(560);
+      setCanvasWidth(560);
       cellHeight = 20;
       cellWidth = 20
     }
     else if (window.innerWidth > 400) {
-      setWidth(280);
+      setCanvasWidth(280);
+      width = 280;
       cellHeight = 10;
       cellWidth = 10;
     }
-    else setWidth(100)
+    else setCanvasWidth(100)
   };
-  let [socket, setSocket] = useState(socket_);
+  let [w, setW] = useState(0)
 
   useEffect(() => {
     const g = generateEmptyGrid();
@@ -87,7 +89,6 @@ export default function Canvas({ clear, setPredictedNumber, socket_ }) {
       drawRect(e)
       const row = getClickedRow(e);
       const col = getClickedCol(e);
-      socket.emit('data', { row: row, col: col })
     }
   }
 
@@ -96,10 +97,6 @@ export default function Canvas({ clear, setPredictedNumber, socket_ }) {
       drawRect(e);
       const row = getClickedRow(e);
       const col = getClickedCol(e);
-      socket.emit('data', { row: row, col: col })
-      socket.on('data', data => {
-        setPredictedNumber(data.result);
-      })
     }
   }
 
@@ -109,8 +106,12 @@ export default function Canvas({ clear, setPredictedNumber, socket_ }) {
 
   var comp;
 
+
+  const style = {
+    width: canvasWidth
+  }
   return (
-    <div ref={canvas} className={`w-[${width}px]`} onMouseDown={handleOnMouseDownCanvas} onMouseMove={handleOnMouseMoveCanvas} onMouseUp={handleOnMouseUpCanvas}>
+    <div ref={canvas} style={style} onMouseDown={handleOnMouseDownCanvas} onMouseMove={handleOnMouseMoveCanvas} onMouseUp={handleOnMouseUpCanvas}>
       <div className='flex flex-wrap'>
         {grids.map((grid, row) => {
           return grid.map((g, col) => {
