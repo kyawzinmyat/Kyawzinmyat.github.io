@@ -9,15 +9,6 @@ export default function NeuralNetworkProject() {
     let [predictedNumber, setPredictedNumber] = useState();
     let [clear, setClear] = useState();
 
-    const _socket = io("https://neural-network-socket.onrender.com/", {
-        transports: ["websocket"],
-        cors: {
-            origin: "http://localhost:5173/",
-        },
-    });
-    _socket.on('connect', data => {
-    })
-
 
     const handleOnClickedClear = () => {
         setClear(!clear);
@@ -44,7 +35,7 @@ export default function NeuralNetworkProject() {
             </div>
             <div className='col-span-2 grid grid-cols-1 xl:grid-cols-3'>
                 <div className='col-span-2 p-5 mx-auto'>
-                    <Canvas clear={clear} socket_={_socket} setPredictedNumber={setPredictedNumber}></Canvas>
+                    <Canvas clear={clear} setPredictedNumber={setPredictedNumber}></Canvas>
                 </div>
                 <div className='primary-color flex justify-center items-center text-center'>
 

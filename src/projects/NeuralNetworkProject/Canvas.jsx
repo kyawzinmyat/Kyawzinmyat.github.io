@@ -3,7 +3,8 @@ import Cell from './Cell';
 var cellWidth = 20;
 var cellHeight = 20;
 var width = 560;
-
+const LOCAL = 'http://localhost:5000/predict'
+const GLOBAL = 'https://neural-network-socket.onrender.com/predict'
 export default function Canvas({ clear, setPredictedNumber }) {
   let [isDraw, setIsDraw] = useState(false);
   let [canvasWidth, setCanvasWidth] = useState(560)
@@ -12,7 +13,7 @@ export default function Canvas({ clear, setPredictedNumber }) {
   }
 
   const callPredictApi =  async() => {
-    let response = await fetch('http://localhost:5000/predict', {
+    let response = await fetch(GLOBAL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
