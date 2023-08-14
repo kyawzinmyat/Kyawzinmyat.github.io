@@ -8,16 +8,20 @@ export default function Canvas({ clear, setPredictedNumber }) {
   let [isDraw, setIsDraw] = useState(false);
   let [canvasWidth, setCanvasWidth] = useState(560)
   const generateEmptyGrid = () => {
-    var g = [];
-    for (var i = 0; i < 28; i++) {
-      g.push([])
-      for (var j = 0; j < 28; j++) {
-        g[i].push(<Cell row={i} col={j}></Cell>)
-      }
-    }
-    return g;
+    return Array.from(Array(28), () => new Array(28).fill(0))
   }
 
+  const callPredictApi =  async() => {
+    let response = await fetch('http://localhost:5000/predict', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ grid: grids}),
+    });
+    var data = await response.json();
+    setPredictedNumber(data.result)
+  }
 
   const handleWindowResize = () => {
     if (window.innerWidth > 1200) {
@@ -48,6 +52,7 @@ export default function Canvas({ clear, setPredictedNumber }) {
   const g = generateEmptyGrid()
   let [grids, setGrids] = useState(g);
   let canvas = useRef(null);
+  
 
   const getClickedRow = (e) => {
     comp = canvas.current.getBoundingClientRect()
@@ -73,7 +78,7 @@ export default function Canvas({ clear, setPredictedNumber }) {
         return grid.map(
           (g, c) => {
             if (r == row && col === c) {
-              return { ...g, isDraw: true }
+              return 0.9
             }
             return g;
           }
@@ -86,22 +91,25 @@ export default function Canvas({ clear, setPredictedNumber }) {
   const handleOnMouseDownCanvas = (e) => {
     if (!isDraw) {
       setIsDraw(!isDraw);
-      drawRect(e)
       const row = getClickedRow(e);
       const col = getClickedCol(e);
+      g[row][col] =  0.9;
+      drawRect(e)
     }
   }
 
   const handleOnMouseMoveCanvas = (e) => {
     if (isDraw) {
-      drawRect(e);
       const row = getClickedRow(e);
       const col = getClickedCol(e);
+      g[row][col] =  0.9;
+      drawRect(e);
     }
   }
 
   const handleOnMouseUpCanvas = () => {
-    setIsDraw(false)
+    setIsDraw(false);
+    callPredictApi()
   }
 
   var comp;
@@ -115,11 +123,8 @@ export default function Canvas({ clear, setPredictedNumber }) {
       <div className='flex flex-wrap'>
         {grids.map((grid, row) => {
           return grid.map((g, col) => {
-            const cell = React.cloneElement(g, { row_: row, col_: col, isDraw: g.isDraw, width: cellWidth, height: cellHeight })
             return (
-              <div key={row + '/' + col}>
-                {cell}
-              </div>
+              <Cell key={row + ' ' + col} row_={row} col_={col} isDraw={g==0? false: true} width={cellWidth} height={cellHeight}></Cell>
             )
           })
         })}
