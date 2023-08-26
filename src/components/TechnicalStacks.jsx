@@ -65,7 +65,7 @@ export default function TechnicalStacks() {
     let [show, setShow] = useState(false);
 
     return (
-        <div className='m-5 p-5 box'>
+        <div className='m-[5em] p-[5em] box'>
             <div className='primary-color'>
                 <h1 className='md:text-4xl text-md font-extrabold text-center primary-color'>Technical Stack</h1>
                 <div className='md:w-4/12 w-8/12 my-5 mx-auto'>
@@ -76,30 +76,32 @@ export default function TechnicalStacks() {
                 <div className='grid md:grid-cols-3 grid-cols-2 justify-center item-center gap-10 w-10/12 mx-auto'>
                     <TechnicalCard information={technical} title='Technical'></TechnicalCard>
                     <TechnicalCard information={tools} title='Tools'></TechnicalCard>
-                    <TechnicalCard information={softskills} title='Soft Skills'></TechnicalCard>
+                    <div className='md:col-span-1 col-span-2'>
+                        <TechnicalCard information={softskills} title='Soft Skills'></TechnicalCard>
+                    </div>
                 </div>
             </div>
             <div className='grid md:grid-cols-3 mx-auto progress'>
                 {show && <>
-                    <div className='white-transparent-bg p-5 m-3'>
+                    <div className='secondary-bg p-5 m-3'>
                         <h1 className='primary-color text-3xl text-center p-5' >Programming Languages</h1>
                         <div className='py-[3em] px-5 flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>Python</h1>
+                                <p className='col-span-full'>Python</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-90'></ProgressBar>
                                 </div>
                                 <span>90%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>JavaScript</h1>
+                                <p className='col-span-full'>JavaScript</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-70'></ProgressBar>
                                 </div>
                                 <span>70%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>Java</h1>
+                                <p className='col-span-full'>Java</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-60'></ProgressBar>
                                 </div>
@@ -107,46 +109,46 @@ export default function TechnicalStacks() {
                             </div>
                         </div>
                     </div>
-                    <div className='white-transparent-bg p-5 m-3'>
+                    <div className='secondary-bg p-5 m-3'>
                         <h1 className='primary-color text-3xl text-center p-5'>Frameworks</h1>
                         <div className='py-[3em] px-5 flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>Django</h1>
+                                <p className='col-span-full'>Django</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-90'></ProgressBar>
                                 </div>
                                 <span>90%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>Flask</h1>
+                                <p className='col-span-full'>Flask</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-90'></ProgressBar>
                                 </div>
                                 <span>90%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>Odoo</h1>
+                                <p className='col-span-full'>Odoo</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-90'></ProgressBar>
                                 </div>
                                 <span>90%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>Tailwindcss</h1>
+                                <p className='col-span-full'>Tailwindcss</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-80'></ProgressBar>
                                 </div>
                                 <span>80%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>Bootstrap</h1>
+                                <p className='col-span-full'>Bootstrap</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-80'></ProgressBar>
                                 </div>
                                 <span>80%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>React</h1>
+                                <p className='col-span-full'>React</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-70'></ProgressBar>
                                 </div>
@@ -155,25 +157,25 @@ export default function TechnicalStacks() {
                         </div>
 
                     </div>
-                    <div className='white-transparent-bg p-5 m-3'>
+                    <div className='secondary-bg p-5 m-3'>
                         <h1 className='primary-color text-3xl text-center p-5'>Markup Languages</h1>
                         <div className='py-[3em] px-5 flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>HTML</h1>
+                                <p className='col-span-full'>HTML</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-90'></ProgressBar>
                                 </div>
                                 <span>90%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>CSS</h1>
+                                <p className='col-span-full'>CSS</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-90'></ProgressBar>
                                 </div>
                                 <span>90%</span>
                             </div>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
-                                <h1 className='col-span-full'>XML</h1>
+                                <p className='col-span-full'>XML</p>
                                 <div className='col-span-4'>
                                     <ProgressBar height='20px' progress='linear-progress-90'></ProgressBar>
                                 </div>

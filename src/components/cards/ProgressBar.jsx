@@ -5,7 +5,6 @@ export default function ProgressBar({ width, height, radius = '10px', progress }
     const outerStyle = {
         width: width,
         borderRadius: radius,
-        border: '0.1px solid #9D61FF'
     };
 
     const innerStyle = {

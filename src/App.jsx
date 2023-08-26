@@ -15,7 +15,7 @@ function App() {
       <motion.div
 
       >
-        <motion.div className="progress-bar" style={{ scaleX }} />
+        {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
         <Navbar activePage='home'></Navbar>
         <Home></Home>
         <Footer></Footer>

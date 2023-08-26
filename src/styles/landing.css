@@ -1,12 +1,17 @@
 .landing-body {
     background-repeat: no-repeat;
-    /* background-image:   linear-gradient(to bottom left , rgba(255, 255, 255, 0.337) 50%, var(--primary-accent-color) 50%, var(--primary-accent-color) 100%); */
+    background:   linear-gradient(245deg , rgba(0, 0, 0, .1) 40%, var(--primary-accent-color) 50%, rgba(0, 0, 0, .8) 70%), url('../assets/landing2.png');
     /* Full height */
     width: 100%;
-    min-height: 100vh;    /* Center and scale the image nicely */
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    object-fit: cover;
+}
+
+.landing-body p{
+    margin: 20px auto;
+    width: min(100%, 800px);
 }
 
 
@@ -51,11 +56,11 @@
     }
 }
 
-.landing-animation{
+/* .landing-animation{
     background-image:   linear-gradient(to bottom left , rgba(255, 255, 255, 0.337) 50%, var(--primary-accent-color) 50%, var(--primary-accent-color) 100%),
     linear-gradient(to top left , rgba(255, 255, 255, 0.337) 50%, var(--primary-accent-color) 50%, var(--primary-accent-color) 100%);
         animation: landing-ani .5s ease-in-out forwards;
-}
+} */
 
 .text-pop-animation{
     animation: text-pop-ani 1s ease-in-out forwards;

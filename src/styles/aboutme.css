@@ -1,0 +1,42 @@
+/* .aboutme-title{
+    position: relative;
+    width: min(100%, 1800px);
+    background-color: white;
+}
+
+@media (min-width: 1200px){
+    .aboutme-title::after{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        margin: 0 auto;
+        height: 20px;
+        border-bottom:  1px solid var(--primary-accent-color);
+    }
+    
+    .aboutme-title::before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        width: 30%;
+        right: 0;
+        height: 20px;
+        border-bottom:  1px solid var(--primary-accent-color);
+    }
+} */
+
+.professional{
+    background: url('../assets/professional.png');
+    object-fit: contain;
+    background-position: center;
+}
+
+.personal{
+    background: url('../assets/personal.png');
+}
+
+.education{
+    background: url('../assets/education.png');
+}

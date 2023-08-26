@@ -7,7 +7,7 @@ export default function Footer() {
     const body = '';
     return (
         <>
-            <div className='box primary-accent-bg p-[3em] border-t-2 secondary-color'>
+            <div className='box secondary-bg p-[3em] border-t-2 primary-color'>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 my-[4em] gap-10'>
                     <div>
                         <h1 className='py-2 text-lg'>Kyaw Zin Myat</h1>
