@@ -1,12 +1,18 @@
 .landing-body {
     background-repeat: no-repeat;
-    background:   linear-gradient(245deg , rgba(0, 0, 0, .1) 40%, var(--primary-accent-color) 50%, rgba(0, 0, 0, .8) 70%), url('../assets/landing2.png');
+    background:   linear-gradient(-185deg , rgba(0, 0, 0, .1) 40%, var(--primary-accent-color) 50%, rgba(0, 0, 0, .8) 70%), url('../assets/landing2.png');
     /* Full height */
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: cover;
+    height: min(100vh, 900px);
+    position: relative;
+}
+
+.landing-text{
+    z-index: 1;
 }
 
 .landing-body p{
@@ -14,6 +20,12 @@
     width: min(100%, 800px);
 }
 
+.foreground{
+    position: absolute;
+    opacity: .2;
+    border: 0;
+    bottom: 0;
+}
 
 @keyframes landing-ani {
     0% {
