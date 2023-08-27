@@ -1,5 +1,5 @@
 import '../styles/landing.css'
-import SteveImage from '../assets/STEVE.png'
+import EarhtImage from '../assets/landing3.png'
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa'
 
 export default function Landing() {
@@ -25,7 +25,7 @@ export default function Landing() {
           </div>
         </div>
         <div className='foreground'>
-          <img src='../assets/landing3.png'></img>
+          <img src={EarhtImage}></img>
         </div>
       </div>
     </div>
