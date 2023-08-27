@@ -71,6 +71,10 @@
   color: var(--secondary-accent-color);
 }
 
+.section-margin{
+  margin-top: 190px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -211,6 +215,10 @@ h2{
   letter-spacing: -1.9px;
 }
 
+.text-shadow{
+  text-shadow: 0px 0px 5px black;
+}
+
 .primary-accent-outline{
   border: 1px solid var(--primary-accent-color)
 }
@@ -221,12 +229,29 @@ p{
 }
 
 .body-text{
-  line-height: 50px;
-  font-size: 3rem;
+  line-height: 55px;
+  font-size: 4rem;
+  letter-spacing: -1.5px;
 }
 
-.header-typo{
-  line-height: 56px;
-  font-size: 48px;
-  letter-spacing: -1.6px;
+.header-upper-text{
+  letter-spacing: -2.5px;
+  text-transform: uppercase;
+}
+
+.header-text{
+  line-height: 42px;
+  font-size: 40px;
+  width: 100%;
+  letter-spacing: -1.8px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar  {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

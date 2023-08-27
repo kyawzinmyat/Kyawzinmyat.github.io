@@ -6,14 +6,20 @@ import Landing from './components/Landing'
 import Aboutme from './components/Aboutme'
 
 export default function Home() {
-  
+
   return (
     <>
-    <Landing></Landing>
+      <Landing></Landing>
       <Aboutme></Aboutme>
-      <TechnicalStacks></TechnicalStacks>
-      <Certificates></Certificates>
-      <Goals></Goals>
+      <div className='section-margin'>
+        <TechnicalStacks></TechnicalStacks>
+      </div>
+      <div className='section-margin'>
+        <Certificates></Certificates>
+      </div>
+      <div className='section-margin'>
+        <Goals></Goals>
+      </div>
     </>
   )
 }

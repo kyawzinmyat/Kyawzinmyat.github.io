@@ -40,3 +40,19 @@
 .education{
     background: url('../assets/education.png');
 }
+
+.aboutme-container{
+    /* background: linear-gradient(to left, rgb(0, 0, 0, 1) 0%, rgb(160,77,239, 0.5) 10%,  rgb(0, 0, 0, 1) 20%,  rgb(160,77,239, 0.5) 30%, rgb(0, 0, 0, 1) 40%,  rgb(160,77,239, 0.5) 50%,  rgb(0, 0, 0, 1) 70%, rgb(160,77,239, 0.5) 100% ); */
+    background: linear-gradient(to left, rgb(0, 0, 0, .6) 0%, rgb(0, 0, 0, 0.8) 100% ), url('../assets/aboutme.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.about-me-sections li{
+    cursor: pointer;
+}
+
+.about-me-sections li:hover{
+    color: var(--secondary-accent-color)
+}

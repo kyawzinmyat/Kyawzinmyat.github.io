@@ -12,14 +12,16 @@ function App() {
     restDelta: 0.001
   });
   return (
-      <motion.div
+    <motion.div
 
-      >
-        {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
-        <Navbar activePage='home'></Navbar>
-        <Home></Home>
+    >
+      {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
+      <Navbar activePage='home'></Navbar>
+      <Home></Home>
+      <div className='section-margin'>
         <Footer></Footer>
-      </motion.div>
+      </div>
+    </motion.div>
   )
 }
 

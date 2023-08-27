@@ -14,7 +14,7 @@ export default function Certificates() {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <div className='primary-color text-3xl text-center font-bold m-5 md:p-[5em] p-[2em] box' >
+    <div className='primary-color text-3xl text-center font-bold m-5 md:p-[2em] p-[2em] box' >
       <h1 className='p-[2em] md:text-3xl text-lg primary-color'>Certificates</h1>
       <div className='flex flex-wrap md:w-8/12 mx-auto gap-[3em] my-5' ref={ref} style={{
         transform: isInView ? 'none' : 'translateY(-200px)', opacity: isInView ? 1 : 0,

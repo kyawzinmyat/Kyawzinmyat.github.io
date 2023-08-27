@@ -42,7 +42,7 @@ export default function Navbar({activePage}) {
     let projectsNavClass = ' md:border-none border-b-2 border-indigo-200 p-[1em] ' + (activePage === 'projects' ? 'active-nav-section' : '')
     return (
         <div className='box sticky top-0' style={{ zIndex: '10000' }}>
-            <div className='w-8/12 mx-auto'>
+            <div className='md:w-8/12 w-full mx-auto'>
                 <div id='nav' className='flex md:flex-row md:justify-between md:items-center flex-col gap-10 w-full md:w-11/12 mx-auto primar-color secondary-bg'>
                     <div className='md:mx-[2em] md:my-0 my-5'>
                         <h1 className='font-extrabold text-xl  md:m-0 m-4'>KZM/ Dev</h1>

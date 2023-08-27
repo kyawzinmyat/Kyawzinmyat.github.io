@@ -65,7 +65,7 @@ export default function ProjectCard({ title, mobileImg, img, description, techni
                             className='relative' alt='laptop image'></img>
                     </picture>
 
-                    <div className='absolute w-[110px] xs:w-[112px] sm:w-[150px] md:w-[450px] lg:w-[460px] xl:w-[610px] top-[10%] md:top-5 left-0 right-0 bottom-0 mx-auto item-center rounded-[10px] h-[80%] md:h-[63%] xl:h-[65%] overflow-scroll'>
+                    <div className='hide-scrollbar absolute w-[110px] xs:w-[140px] sm:w-[145px] md:w-[450px] lg:w-[460px] xl:w-[610px] top-[10%] md:top-5 left-0 right-0 bottom-0 mx-auto item-center rounded-[10px] h-[80%] md:h-[63%] xl:h-[65%] overflow-scroll'>
                         {renderImages()}
                     </div>
 

@@ -63,25 +63,25 @@ export default function TechnicalStacks() {
     });
 
     let [show, setShow] = useState(false);
-
+//linear-gradient(to left, rgb(0, 0, 0, 1) 0%, purple 100% ),
     return (
-        <div className='m-[5em] p-[5em] box'>
+        <div className='m-[5em] px-[5em] box' >
             <div className='primary-color'>
-                <h1 className='md:text-4xl text-md font-extrabold text-center primary-color'>Technical Stack</h1>
+                <h1 className='md:text-4xl text-md font-extrabold text-center primary-color header-upper-text'>Technical Stack</h1>
                 <div className='md:w-4/12 w-8/12 my-5 mx-auto'>
                     <p className='text-center md:p-4 md:text-md font-md text-sm'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
                 </div>
             </div>
             <div className='primary-color my-4'>
-                <div className='grid md:grid-cols-3 grid-cols-2 justify-center item-center gap-10 w-10/12 mx-auto'>
+                <div className='grid md:grid-cols-3 grid-cols-1 justify-center  item-center gap-10 w-10/12 mx-auto'>
                     <TechnicalCard information={technical} title='Technical'></TechnicalCard>
                     <TechnicalCard information={tools} title='Tools'></TechnicalCard>
-                    <div className='md:col-span-1 col-span-2'>
+                    <div className='md:col-span-1 '>
                         <TechnicalCard information={softskills} title='Soft Skills'></TechnicalCard>
                     </div>
                 </div>
             </div>
-            <div className='grid md:grid-cols-3 mx-auto progress'>
+            <div className='grid md:grid-cols-3 mx-auto progress section-margin'>
                 {show && <>
                     <div className='secondary-bg p-5 m-3'>
                         <h1 className='primary-color text-3xl text-center p-5' >Programming Languages</h1>

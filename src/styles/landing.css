@@ -1,6 +1,6 @@
 .landing-body {
     background-repeat: no-repeat;
-    background:   linear-gradient(-185deg , rgba(0, 0, 0, .1) 40%, var(--primary-accent-color) 50%, rgba(0, 0, 0, .8) 70%), url('../assets/landing2.png');
+    background:   linear-gradient(135deg , rgba(0, 0, 0, .1) 40%, var(--primary-accent-color) 50%, rgba(0, 0, 0, .8) 70%), url('../assets/landing2.png');
     /* Full height */
     width: 100%;
     background-position: center;
@@ -31,11 +31,11 @@
 
 @keyframes landing-ani {
     0% {
-        transform: rotateY(180deg);
+        transform: translateX(1000px);
         background-color: var(--primary-accent-color);
         backface-visibility: hidden;
         z-index: 100;
-        width: 100%;
+        width: 0%;
     }
 
     100%{
@@ -46,26 +46,19 @@
 @keyframes text-pop-ani {
 
     0%{
-        transform: translateX(-1000px);
-        background-color: var(--secondary-accent-color);
-        color: var(--secondary-accent-color);
+        transform: translateY(-1000px);
+        background-color: var(--primary-accent-color);
+        color: var(--primary-accent-color);
+        width: 0;
+        opacity: 1;
+        scale: 0;
+        overflow: hidden;
     }
 
-    70%{
-        background-color: var(--secondary-accent-color);
-        color: var(--secondary-accent-color);
-        transform: translateX(1500px);
-    }
-
-    
-    71%{
-        background-color: white;
-        color: white;
-        transform: translateX(1000px);
-    }
 
     100%{
         transform: scaleX(1);
+        scale: 1;
         transform-origin: bottom center;
     }
 }
@@ -73,9 +66,9 @@
 /* .landing-animation{
     background-image:   linear-gradient(to bottom left , rgba(255, 255, 255, 0.337) 50%, var(--primary-accent-color) 50%, var(--primary-accent-color) 100%),
     linear-gradient(to top left , rgba(255, 255, 255, 0.337) 50%, var(--primary-accent-color) 50%, var(--primary-accent-color) 100%);
-        animation: landing-ani .5s ease-in-out forwards;
+    animation: landing-ani .1s ease-in-out forwards;
 } */
 
 .text-pop-animation{
-    animation: text-pop-ani 1s ease-in-out forwards;
+    animation: text-pop-ani 1.5s ease-in-out forwards;
 }

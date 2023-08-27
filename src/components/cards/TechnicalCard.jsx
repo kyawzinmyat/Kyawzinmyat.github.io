@@ -10,9 +10,9 @@ export default function TechnicalCard({ information, title }) {
         setClick(!click);
     }
 
-    let classAccordian = 'accordian secondary-bg rounded-[5px] row-span-3 shadow-lg';
-    if (click) classAccordian = 'accordian secondary-bg rounded-[5px] row-span-3 shadow-lg accordian-expand';
-    if (click === false) classAccordian = 'accordian secondary-bg rounded-[5px] row-span-3 shadow-lg accordian-collapse';
+    let classAccordian = 'accordian  rounded-[5px] row-span-3 shadow-lg';
+    if (click) classAccordian = 'accordian  rounded-[5px] row-span-3 shadow-lg accordian-expand';
+    if (click === false) classAccordian = 'accordian  rounded-[5px] row-span-3 shadow-lg accordian-collapse';
 
     return (
         <div>
