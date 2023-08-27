@@ -22,8 +22,9 @@
   --secondary-accent-color: #B2FF59;
 }
 
+
 *{
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .primary-bg{

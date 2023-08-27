@@ -22,9 +22,11 @@
 
 .foreground{
     position: absolute;
+    width: 100%;
     opacity: .2;
     border: 0;
     bottom: 0;
+    mix-blend-mode: lighten;
 }
 
 @keyframes landing-ani {
