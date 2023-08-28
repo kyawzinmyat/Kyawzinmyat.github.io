@@ -12,7 +12,7 @@ export default function Aboutme() {
             <h1 className='md:text-4xl header-text text-2xl font-extrabold primary-color p-[2em] md:p-[5em]'>A Brief Introduction of Myself</h1>
 
             <div className='lg:w-9/12 w-full mx-auto about-me-container' style={{
-                transform: isInView ? 'none' : 'translateY(2000px)', opacity: isInView ? 1 : 0,
+                opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
             }}>
                 <div className='grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-y-10'>
@@ -23,7 +23,7 @@ export default function Aboutme() {
                             <li className='p-[1em] border-2 border-white secondary-bg rounded-full' style={active==='education'?{backgroundColor: 'var(--secondary-accent-color)', color: 'black'} : {}} onClick={() => setActive('education')}>Education</li>
                         </ul>
                     </motion.div>
-                    {active === 'professional' &&  <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'height 3s cubic-bezier(0,1.5,1,1.5)'}}>
+                    {active === 'professional' &&  <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
                         <div className='p-[2em] w-full lg:w-10/12 text-left flex justify-center items-center'>
                             <div>
                                 <motion.h1 initial="hidden"
@@ -33,7 +33,7 @@ export default function Aboutme() {
                                     Professional
                                 </motion.h1>
                                 <hr></hr>
-                                <div className='font-md text-sm md:text-md lg:py[5em] py-[3em]'>
+                                <div className='font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text'>
                                     <p>My primary responsibilities include managing the timeline, maintaining communication with senior developers, and delivering the finished product on time while providing software implementations for customer demands via project manager and team leader. </p>
                                     <p className='my-5'>I took involved in my seniors' projects in addition to my own by helping them with bug finding, brainstorming with them to come up with better solutions, and taking ownership of their assignments.</p>
                                 </div>
@@ -41,7 +41,7 @@ export default function Aboutme() {
                         </div>
                     </motion.div>}
 
-                    {active === 'personal' && <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'height 3s cubic-bezier(0,1.5,1,1.5)'}}>
+                    {active === 'personal' && <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
                         <div className='p-[2em] w-full lg:w-10/12 text-left flex justify-center items-center'>
                             <div>
                                 <motion.h1 initial="hidden"
@@ -51,7 +51,7 @@ export default function Aboutme() {
                                     Personal
                                 </motion.h1>
                                 <hr></hr>
-                                <div className='font-md text-sm md:text-md lg:py[5em] py-[3em]'>
+                                <div className='font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text'>
                                 <p>I'm currently 20 years old living in Kamayut Township, Yangon. Playing video games and learning about new technologies, such as networking, software, and computer architecture, are two of my passions.</p>
                                     <p className='my-3'> I'm pursuing a Bachelor in Computer Science at an online university right now.</p>
                                 </div>
@@ -59,7 +59,7 @@ export default function Aboutme() {
                         </div>
                     </motion.div>}
 
-                    {active === 'education' && <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'height 3s cubic-bezier(0,1.5,1,1.5)'}}>
+                    {active === 'education' && <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
                         <div className='p-[2em] w-full lg:w-10/12 text-left flex justify-center items-center'>
                             <div>
                                 <motion.h1 initial="hidden"
@@ -69,7 +69,7 @@ export default function Aboutme() {
                                     Education
                                 </motion.h1>
                                 <hr></hr>
-                                <div className='font-md text-sm md:text-md lg:py[5em] py-[3em]'>
+                                <div className='font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text'>
                                 <p>In 2019, I earned my high school diploma.
                                         At UCSY, I majored in computer science, but I no longer do so due to the political controversy.</p>
                                     <p className='my-3'>During the COVID pandemic, I took computer science courses like CS50 and Object-Oriented Java programming to advance my skills.</p>

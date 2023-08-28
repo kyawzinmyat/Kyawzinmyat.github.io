@@ -57,3 +57,11 @@
     color: var(--secondary-accent-color);
     border-color: var(--secondary-accent-color);
 }
+
+.about-me-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 100;
+    -webkit-box-orient: vertical;
+    overflow: scroll;
+    min-height: 400px;
+}
