@@ -246,6 +246,36 @@ p{
   letter-spacing: -1.8px;
 }
 
+@media (max-width: 400px){
+  .body-text{
+    line-height: 25px;
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+  }
+
+  .header-upper-text{
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+  }
+
+  h1{
+    line-height: 26px;
+    font-size: 28px;
+    letter-spacing: -1.1px;
+  }
+  
+  h2{
+    line-height: 16px;
+    font-size: 15px;
+    letter-spacing: -1px;
+  }
+
+  p{
+    line-height: 10px;
+    font-size: 10px;
+  }
+}
+
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }

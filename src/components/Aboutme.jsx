@@ -36,7 +36,7 @@ export default function Aboutme() {
                     </motion.div>
 
                     <motion.div className='flex md:justify-end md:items-top'>
-                        <ul className='md:flex xl:flex-row  gap-5 flex-col md:text-[1rem] text-[0.9rem] p-[0.1em] about-me-sections'>
+                        <ul className='md:flex xl:flex-row  gap-5 flex-col md:text-[1rem] text-[0.5rem] p-[0.1em] about-me-sections'>
                             <li className='p-[1em] border-b-2'>Professional</li>
                             <li className='p-[1em] border-b-2'>Personal</li>
                             <li className='p-[1em] border-b-2'>Educational</li>

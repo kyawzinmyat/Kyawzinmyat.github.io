@@ -67,7 +67,7 @@ export default function TechnicalStacks() {
     return (
         <div className='m-[5em] px-[5em] box' >
             <div className='primary-color'>
-                <h1 className='md:text-4xl text-md font-extrabold text-center primary-color header-upper-text'>Technical Stack</h1>
+                <h1 className='font-extrabold text-center primary-color header-upper-text'>Technical Stack</h1>
                 <div className='md:w-4/12 w-8/12 my-5 mx-auto'>
                     <p className='text-center md:p-4 md:text-md font-md text-sm'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
                 </div>
@@ -84,7 +84,7 @@ export default function TechnicalStacks() {
             <div className='grid md:grid-cols-3 mx-auto progress section-margin'>
                 {show && <>
                     <div className='secondary-bg p-5 m-3'>
-                        <h1 className='primary-color text-3xl text-center p-5' >Programming Languages</h1>
+                        <h1 className='primary-color text-sm lg:text-3xl text-center p-5' >Programming Languages</h1>
                         <div className='py-[3em] px-5 flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                                 <p className='col-span-full'>Python</p>
@@ -110,7 +110,7 @@ export default function TechnicalStacks() {
                         </div>
                     </div>
                     <div className='secondary-bg p-5 m-3'>
-                        <h1 className='primary-color text-3xl text-center p-5'>Frameworks</h1>
+                        <h1 className='primary-color text-sm lg:text-3xl text-center p-5'>Frameworks</h1>
                         <div className='py-[3em] px-5 flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                                 <p className='col-span-full'>Django</p>
@@ -158,7 +158,7 @@ export default function TechnicalStacks() {
 
                     </div>
                     <div className='secondary-bg p-5 m-3'>
-                        <h1 className='primary-color text-3xl text-center p-5'>Markup Languages</h1>
+                        <h1 className='primary-color text-sm lg:text-3xl text-center p-5'>Markup Languages</h1>
                         <div className='py-[3em] px-5 flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                                 <p className='col-span-full'>HTML</p>
