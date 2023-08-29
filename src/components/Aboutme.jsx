@@ -8,7 +8,7 @@ export default function Aboutme() {
     let [active, setActive] = useState('professional')
 
     return (
-        <div className='box aboutme-container mx-auto my-5 py-[2em] primary-color text-center' ref={ref}>
+        <div className='box aboutme-container mx-auto my-5 py-[2em] primary-color text-center max-h-max' ref={ref}>
             <h1 className='md:text-4xl header-text text-2xl font-extrabold primary-color p-[2em] md:p-[5em]'>A Brief Introduction of Myself</h1>
 
             <div className='lg:w-9/12 w-full mx-auto about-me-container' style={{
@@ -23,7 +23,7 @@ export default function Aboutme() {
                             <li className='p-[1em] border-2 border-white secondary-bg rounded-full' style={active==='education'?{backgroundColor: 'var(--secondary-accent-color)', color: 'black'} : {}} onClick={() => setActive('education')}>Education</li>
                         </ul>
                     </motion.div>
-                    {active === 'professional' &&  <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
+                    {active === 'professional' &&  <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{opacity: 0, overflow: 'hidden'}} whileInView={{opacity: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
                         <div className='p-[2em] w-full lg:w-10/12 text-left flex justify-center items-center'>
                             <div>
                                 <motion.h1 initial="hidden"
@@ -41,7 +41,7 @@ export default function Aboutme() {
                         </div>
                     </motion.div>}
 
-                    {active === 'personal' && <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
+                    {active === 'personal' && <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{opacity: 0, overflow: 'hidden'}} whileInView={{opacity: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
                         <div className='p-[2em] w-full lg:w-10/12 text-left flex justify-center items-center'>
                             <div>
                                 <motion.h1 initial="hidden"
@@ -59,7 +59,7 @@ export default function Aboutme() {
                         </div>
                     </motion.div>}
 
-                    {active === 'education' && <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{height: 0, overflow: 'hidden'}} whileInView={{height: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
+                    {active === 'education' && <motion.div className='primary-color rounded-[5px]  shadow-lg col-span-2' initial={{opacity: 0, overflow: 'hidden'}} whileInView={{opacity: '100%', transition: 'all 3s cubic-bezier(0,1.5,1,1.5) 2s'}}>
                         <div className='p-[2em] w-full lg:w-10/12 text-left flex justify-center items-center'>
                             <div>
                                 <motion.h1 initial="hidden"

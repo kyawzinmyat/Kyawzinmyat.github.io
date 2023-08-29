@@ -27,26 +27,13 @@
     }
 } */
 
-.professional{
-    background: url('../assets/professional.png');
-    object-fit: contain;
-    background-position: center;
-}
-
-.personal{
-    background: url('../assets/personal.png');
-}
-
-.education{
-    background: url('../assets/education.png');
-}
-
 .aboutme-container{
     /* background: linear-gradient(to left, rgb(0, 0, 0, 1) 0%, rgb(160,77,239, 0.5) 10%,  rgb(0, 0, 0, 1) 20%,  rgb(160,77,239, 0.5) 30%, rgb(0, 0, 0, 1) 40%,  rgb(160,77,239, 0.5) 50%,  rgb(0, 0, 0, 1) 70%, rgb(160,77,239, 0.5) 100% ); */
-    background: linear-gradient(to left, rgb(0, 0, 0, .6) 0%, rgb(0, 0, 0, 0.8) 100% ), url('../assets/aboutme-2.png');
+    background: linear-gradient(to left, rgb(0, 0, 0, .6) 0%, rgb(0, 0, 0, 0.8) 100% ), url('../assets/aboutme.png');
     background-position: center;
     background-size: cover;
     width: 100%;
+    /* height: min(100vh, 1400px); */
 }
 
 .about-me-sections li{
@@ -59,9 +46,9 @@
 }
 
 .about-me-text{
-    display: -webkit-box;
-    -webkit-line-clamp: 100;
+    /* display: -webkit-box;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    overflow: scroll;
+    overflow: scroll; */
     min-height: 400px;
 }
