@@ -42,14 +42,14 @@ export default function Navbar({activePage}) {
     let projectsNavClass = ' md:border-none border-b-2 border-indigo-200 p-[1em] ' + (activePage === 'projects' ? 'active-nav-section' : '')
     return (
         <div className='box sticky top-0' style={{ zIndex: '10000' }}>
-            <div className='md:w-8/12 w-full mx-auto'>
+            <div className='md:w-11/12 lg:w-10/12 w-full mx-auto'>
                 <div id='nav' className='flex md:flex-row md:justify-between md:items-center flex-col gap-10 w-full md:w-11/12 mx-auto primar-color secondary-bg'>
                     <div className='md:mx-[2em] md:my-0 my-5'>
                         <h1 className='font-extrabold text-xl  md:m-0 m-4'>KZM/ Dev</h1>
                     </div>
                     <ul className='hidden flex md:flex md:flex-row md:justify-evenly md:m-0 m-3 md:gap-0 gap-10 flex-col w-4/12 text-md' id='sub-nav'>
                         <li className={homeNavClass}><a className='font-extrabold' href='/'>Home</a></li>
-                        <li className={aboutmeNavClass}><a className='font-extrabold' href='/aboutme/'>About Me</a></li>
+                        {/* <li className={aboutmeNavClass}><a className='font-extrabold' href='/aboutme/'>About Me</a></li> */}
                         <li className={projectsNavClass}><a className='font-extrabold' href='/projects/'>Projects</a></li>
                     </ul>
                     <div className='font-extrabold text-xl md:my-0 m-3 hidden md:block' id='sub-button'>

@@ -9,7 +9,7 @@ export default function Aboutme() {
 
     return (
         <div className='box aboutme-container mx-auto my-5 py-[2em] primary-color text-center max-h-max' ref={ref}>
-            <h1 className='md:text-4xl header-text text-2xl font-extrabold primary-color p-[2em] md:p-[5em]'>A Brief Introduction of Myself</h1>
+            <h1 className='md:text-4xl header-text text-xs sm:text-xl font-extrabold primary-color p-[2em] md:p-[5em]'>A Brief Introduction of Myself</h1>
 
             <div className='lg:w-9/12 w-full mx-auto about-me-container' style={{
                 opacity: isInView ? 1 : 0,
@@ -17,7 +17,7 @@ export default function Aboutme() {
             }}>
                 <div className='grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-y-10'>
                     <motion.div className='flex md:col-span-3 p-[2em] justify-end'>
-                        <ul className='flex gap-5 md:text-[1rem] text-[0.8rem] p-[0.1em] about-me-sections'>
+                        <ul className='flex gap-5 md:text-[1rem] text-[0.6rem] sm:text-[0.8rem] p-[0.1em] about-me-sections'>
                             <li className='p-[1em] border-2 border-white secondary-bg rounded-full' style={active==='professional'?{backgroundColor: 'var(--secondary-accent-color)', color: 'black'} : {}} onClick={() => setActive('professional')}>Professional</li>
                             <li className='p-[1em] border-2 border-white secondary-bg rounded-full' style={active==='personal'?{backgroundColor: 'var(--secondary-accent-color)', color: 'black'} : {}} onClick={() => setActive('personal')}>Personal</li>
                             <li className='p-[1em] border-2 border-white secondary-bg rounded-full' style={active==='education'?{backgroundColor: 'var(--secondary-accent-color)', color: 'black'} : {}} onClick={() => setActive('education')}>Education</li>
@@ -33,8 +33,8 @@ export default function Aboutme() {
                                     Professional
                                 </motion.h1>
                                 <hr></hr>
-                                <div className='font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text'>
-                                    <p>My primary responsibilities include managing the timeline, maintaining communication with senior developers, and delivering the finished product on time while providing software implementations for customer demands via project manager and team leader. </p>
+                                <div className='font-md lg:py[5em] py-[3em] about-me-text'>
+                                    <p>My primary responsibilities include <strong className='uppercase font-black'>managing the timeline, maintaining communication with senior developers, and delivering the finished product on time</strong> while providing software implementations for customer demands via project manager and team leader. </p>
                                     <p className='my-5'>I took involved in my seniors' projects in addition to my own by helping them with bug finding, brainstorming with them to come up with better solutions, and taking ownership of their assignments.</p>
                                 </div>
                             </div>

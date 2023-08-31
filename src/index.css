@@ -85,7 +85,7 @@ a:hover {
 }
 
 .primary-gradient-color{
-  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.18) 11.5%, rgb(119, 44, 232) 91.2%);
+  background: linear-gradient(to right, rgba(178, 255, 89, 0.8), var(--secondary-accent-color) 100%);
   background-clip: text;
   color: transparent;
 }
@@ -215,6 +215,13 @@ h2{
   letter-spacing: -1.9px;
 }
 
+h3{
+  line-height: 26px;
+  font-size: 20px;
+  letter-spacing: -1.6px;
+}
+
+
 .text-shadow{
   text-shadow: 0px 0px 5px black;
 }
@@ -260,7 +267,7 @@ p{
 
   h1{
     line-height: 26px;
-    font-size: 28px;
+    font-size: 25px;
     letter-spacing: -1.1px;
   }
   
@@ -271,8 +278,44 @@ p{
   }
 
   p{
-    line-height: 10px;
-    font-size: 10px;
+    line-height: 25px;
+    font-size: 18px;
+  }
+
+  .section-margin{
+    margin-top: 100px;
+  }
+}
+
+
+@media (max-width: 400px){
+
+  p{
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .body-text{
+    line-height: 25px;
+    font-size: 1.6rem;
+    letter-spacing: -1.3px;
+  }
+
+  .header-upper-text{
+    letter-spacing: -1.3px;
+    text-transform: uppercase;
+  }
+
+  h1{
+    line-height: 20px;
+    font-size: 19px;
+    letter-spacing: -1px;
+  }
+  
+  h2{
+    line-height: 13px;
+    font-size: 11px;
+    letter-spacing: -1px;
   }
 }
 

@@ -26,9 +26,9 @@ export default function NeuralNetworkProject() {
                     }
                     transition={{ delay: 0.5 }}
                 >
-                    <h1 className='secondary-accent-bg p-5 rounded-full font-bold'>
+                    <h2 className='secondary-accent-bg secondary-color p-5 rounded-full font-bold'>
                         Handwritten Recognition
-                    </h1>
+                    </h2>
                     <p className='lg:text-sm xl:text-lg w-[30ch] text-sm md:w-10/12 mx-auto lg:p-0  font-md py-5 md:p-5 lg:py-4'>Classic Simple Neural Network Project to Recognize Digits Starting from 0 to 9 Without Using Predefined Machine Learning Framework.</p>
                     <p className='lg:py-4 p-2 text-xs font-md'>Technolgies Using/ </p><span>Python, Numpy, Pillow</span>
                 </motion.div>

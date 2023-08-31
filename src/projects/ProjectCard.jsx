@@ -51,7 +51,7 @@ export default function ProjectCard({ title, mobileImg, img, description, techni
                         }
                         transition={{ delay: 0.5 }}
                     >
-                        <h2 className='secondary-bg primary-color md:text-md sm-text-sm  font-bold secondary-accent-bg p-5 rounded-full'>{title}</h2>
+                        <h2 className='secondary-bg secondary-color md:text-md sm-text-sm  font-bold secondary-accent-bg p-5 rounded-full'>{title}</h2>
                         <p className='lg:text-sm xl:text-lg w-[30ch] text-sm md:w-10/12 mx-auto lg:p-0  font-md py-5 md:p-5 lg:py-4'>{description}</p>
                         <p className='lg:py-4 p-2 text-xs font-md'>Technolgies Using/ </p><span>{technicals}</span>
                     </motion.div>

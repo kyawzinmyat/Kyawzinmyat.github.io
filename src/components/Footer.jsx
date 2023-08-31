@@ -14,38 +14,38 @@ export default function Footer() {
                         <p className='py-2'>20 Years Old</p>
                         <p className='py-2'>Junior Software Developer</p>
                     </div>
-                    <div className='md:text-lg text-sm'>
+                    <div className='md:text-md text-xs sm:text-sm'>
                         <ul>
                             <li className=''></li>
                             <li className=''>
-                                < a href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`} className='md:inline-flex gap-10 py-2 gap-2 items-center'>
+                                <a href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`} className='inline-flex  py-2 gap-2 items-center'>
                                     <FaEnvelope></FaEnvelope>
                                     <span>kyawzinmyat00000001@gmail.com</span>
                                 </a>
                             </li>
-                            <li className='py-2 md:inline-flex gap-10 gap-2 items-center'>
+                            <li className='py-2 inline-flex  gap-2 items-center'>
                                 <FaPhone></FaPhone>+95 (09) 968-935-307
                             </li>
                             <li className='py-2'>
-                                <a className='md:inline-flex gap-10 gap-2 items-center' href='https://github.com/kyawzinmyat/'>
+                                <a className='inline-flex  gap-2 items-center' href='https://github.com/kyawzinmyat/'>
                                     <FaGithub></FaGithub> Kyawzin Myat
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <div className='grid grid-cols-3'>
-                            <p>Python</p>
-                            <p>Html</p>
-                            <p>JavaScript</p>
-                            <p>Odoo</p>
-                            <p>CSS</p>
-                            <p>React</p>
-                            <p>Flask</p>
-                            <p>Bootstrap</p>
-                            <p>Vite</p>
-                            <p>Django</p>
-                            <p>Tailwind CSS</p>
+                        <div className='grid grid-cols-3 list-none md:text-sm'>
+                            <li>Python</li>
+                            <li>Html</li>
+                            <li>JavaScrilit</li>
+                            <li>Odoo</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                            <li>Flask</li>
+                            <li>Bootstrali</li>
+                            <li>Vite</li>
+                            <li>Django</li>
+                            <li>Tailwind CSS</li>
                         </div>
                     </div>
                 </div>

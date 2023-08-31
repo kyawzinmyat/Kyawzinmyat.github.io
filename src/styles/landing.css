@@ -46,12 +46,11 @@
 @keyframes text-pop-ani {
 
     0%{
-        transform: translateY(-1000px);
         background-color: var(--primary-accent-color);
         color: var(--primary-accent-color);
         width: 0;
-        opacity: 1;
         scale: 0;
+        opacity: 0;
         overflow: hidden;
     }
 
@@ -59,6 +58,7 @@
     100%{
         transform: scaleX(1);
         scale: 1;
+        opacity: 1;
         transform-origin: bottom center;
     }
 }

@@ -36,7 +36,7 @@ export default function Canvas({ clear, setPredictedNumber }) {
       cellHeight = 10;
       cellWidth = 10;
     }
-    else setCanvasWidth(100)
+    else setCanvasWidth(140)
   };
   let [w, setW] = useState(0)
 

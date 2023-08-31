@@ -65,7 +65,7 @@ export default function TechnicalStacks() {
     let [show, setShow] = useState(false);
 //linear-gradient(to left, rgb(0, 0, 0, 1) 0%, purple 100% ),
     return (
-        <div className='m-[5em] px-[5em] box' >
+        <div className='box' >
             <div className='primary-color'>
                 <h1 className='font-extrabold text-center primary-color header-upper-text'>Technical Stack</h1>
                 <div className='md:w-4/12 w-8/12 my-5 mx-auto'>

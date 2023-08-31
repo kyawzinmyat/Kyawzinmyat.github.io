@@ -4,6 +4,7 @@ import Certificates from './components/Certificates'
 import Goals from './components/Goals'
 import Landing from './components/Landing'
 import Aboutme from './components/Aboutme'
+import Services from './components/Services'
 
 export default function Home() {
 
@@ -13,6 +14,9 @@ export default function Home() {
       <Aboutme></Aboutme>
       <div className='section-margin'>
         <TechnicalStacks></TechnicalStacks>
+      </div>
+      <div className='section-margin'>
+        <Services></Services>
       </div>
       <div className='section-margin'>
         <Certificates></Certificates>
