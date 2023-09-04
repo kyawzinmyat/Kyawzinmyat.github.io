@@ -18,7 +18,7 @@ const projects = [
 export default function Projects() {
   return (
     <motion.div className='box'>
-      <Navbar></Navbar>
+      <Navbar activePage="projects"></Navbar>
 
       <h1 className='text-md lg:text-lg font-bold  text-center m-[1em] w-8/12 mx-auto p-2'>Here are a few projects I completed for my learning journal.</h1>
       <div>

@@ -2,7 +2,7 @@ import CS50Image from '../assets/cs50.webp'
 import JavaImage from '../assets/java_oo.png'
 import React, { useRef, useEffect } from 'react'
 import CertificateCard from './cards/CertificateCard'
-import { motion, transform, useInView } from "framer-motion"
+import { useInView } from "framer-motion"
 
 const certificates = [
   {img: CS50Image, title: 'Introduction to Computer Science is a course that focuses on developing students problem-solving abilities rather than their knowledge of various programming syntaxes.'},

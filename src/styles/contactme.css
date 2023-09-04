@@ -1,0 +1,24 @@
+.contactme:hover > span{
+    transform: translateX(20px);
+}   
+
+.contactme:hover{
+    background: var(--progress-graident-bar);
+    color: var(--color-secondary);
+}
+
+
+
+.contactme:hover a{
+    color: var(--color-primary);
+}
+
+.contactme > span{
+    transition: transform .2s;
+}
+
+@media (max-width: 600px){
+    .contactme:hover > span{
+        transform: translateX(10px);
+    }   
+  }

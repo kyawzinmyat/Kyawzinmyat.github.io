@@ -30,6 +30,10 @@ const softskills = [
 
 export default function TechnicalStacks() {
 
+    const myStyle = {
+        background: "linear-gradient(to left bottom, rgb(0, 0, 0, 1) 0%,  rgb(0, 0, 0, 1) 50%, #a04def 50%, #a04def 100%)"
+    }
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -65,7 +69,7 @@ export default function TechnicalStacks() {
     let [show, setShow] = useState(false);
 //linear-gradient(to left, rgb(0, 0, 0, 1) 0%, purple 100% ),
     return (
-        <div className='box' >
+        <div className='box'>
             <div className='primary-color'>
                 <h1 className='font-extrabold text-center primary-color header-upper-text'>Technical Stack</h1>
                 <div className='md:w-4/12 w-8/12 my-5 mx-auto'>
@@ -81,11 +85,11 @@ export default function TechnicalStacks() {
                     </div>
                 </div>
             </div>
-            <div className='grid md:grid-cols-3 mx-auto progress section-margin'>
+            <div className='grid md:grid-cols-3 mx-auto progress section-margin gap-y-[8rem]' >
                 {show && <>
-                    <div className='secondary-bg md:p-5 md:m-3'>
-                        <h1 className='primary-color text-sm lg:text-3xl text-center p-5' >Programming Languages</h1>
-                        <div className='py-[3em] px-5 flex flex-col gap-6'>
+                    <div className='secondary-bg md:p-5 m-[3em] md:m-3'>
+                        <h1 className='primary-color text-md lg:text-3xl text-center p-5' >Programming Languages</h1>
+                        <div className='py-[3em] px-[1.9rem] flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                                 <p className='col-span-full'>Python</p>
                                 <div className='col-span-4'>
@@ -109,9 +113,9 @@ export default function TechnicalStacks() {
                             </div>
                         </div>
                     </div>
-                    <div className='secondary-bg md:p-5 md:m-3'>
-                        <h1 className='primary-color text-sm lg:text-3xl text-center p-5'>Frameworks</h1>
-                        <div className='py-[3em] px-5 flex flex-col gap-6'>
+                    <div className='secondary-bg md:p-5 m-[3em] md:m-3 primary-accent-gradient-bg rounded-[30px]'>
+                        <h1 className='primary-color text-md lg:text-3xl text-center p-5'>Frameworks</h1>
+                        <div className='py-[3em] px-[1.9rem] flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                                 <p className='col-span-full'>Django</p>
                                 <div className='col-span-4'>
@@ -157,9 +161,9 @@ export default function TechnicalStacks() {
                         </div>
 
                     </div>
-                    <div className='secondary-bg md:p-5 md:m-3'>
-                        <h1 className='primary-color text-sm lg:text-3xl text-center p-5'>Markup Languages</h1>
-                        <div className='py-[3em] px-5 flex flex-col gap-6'>
+                    <div className='secondary-bg md:p-5 m-[3em] md:m-3'>
+                        <h1 className='primary-color text-md lg:text-3xl text-center p-5'>Markup Languages</h1>
+                        <div className='py-[3em] px-[1.9em] flex flex-col gap-6'>
                             <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                                 <p className='col-span-full'>HTML</p>
                                 <div className='col-span-4'>
