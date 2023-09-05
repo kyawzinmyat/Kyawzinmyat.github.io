@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { motion, useInView } from "framer-motion"
 import '../styles/aboutme.css'
-import SteveImage from '../assets/Steve.png'
+// import SteveImage from '../assets/Steve.png'
 
 export default function Aboutme() {
     const ref = useRef(null)
@@ -82,7 +82,7 @@ export default function Aboutme() {
             </div>
 
             <div className='aboutme-image-container'>
-                <img src={SteveImage}></img>
+                {/* <img src={SteveImage}></img> */}
             </div>
         </div>
     )
