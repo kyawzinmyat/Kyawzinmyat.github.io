@@ -24,7 +24,6 @@ export default function TechnicalCard({ information, title, setCurrentImage }) {
                     <div className='w-full flex flex-col xl:gap-20 lg:gap-10'>
                         {information.map(
                             (inf, index) => {
-
                                 return <CardTitle setCurrentImage={setCurrentImage} image={inf[1]} title={inf[0]} key={index}></CardTitle>
 
                             }

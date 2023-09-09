@@ -22,7 +22,7 @@ export default function Navbar({ activePage }) {
             let last_scroll = 0;
             window.addEventListener('scroll', () => {
                 const current_scroll = window.scrollY;
-                if (last_scroll > 20) {
+                if (last_scroll > 50) {
                     if (current_scroll <= last_scroll) {
                         nav.classList.remove('scroll-down');
                         hb.classList.remove('top-[-30em]');
