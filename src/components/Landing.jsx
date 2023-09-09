@@ -18,7 +18,7 @@ export default function Landing() {
             <div className='md:py-[2em] py-[8em] text-pop-animation landing-text'>
               <h1 className='lg:text-2xl md:text-xl sm:text-lg text-sm header-upper-text font-light'>Who Am I?</h1>
               <p className='my-5 body-text'>I'm an <strong className=''>enthusiastic software developer</strong> who lives in Yangon.</p>
-              <p className='text-xs md:text-sm font-light'>Passionate about creating cutting-edge web applications with both frontend and backend functionality.</p>
+              <p className='text-s md:text-sm font-md'>Passionate about creating cutting-edge web applications with both frontend and backend functionality.</p>
               <div className='flex justify-center py-[2em] gap-10'>
                 <FaGithub size='50px'></FaGithub>
                 <FaFacebook size='50px'></FaFacebook>

@@ -20,3 +20,9 @@
     background-color: var(--color-secondary) !important;
     z-index: 8888;
 }
+
+@media (max-width: 767px){
+    #sub-nav{
+        height: 100vh;
+    }
+}

@@ -14,7 +14,7 @@
 }
 
 .contactme > span{
-    transition: transform .2s;
+    transition: transform .4s;
 }
 
 @media (max-width: 600px){

@@ -18,13 +18,13 @@ export default function Contactme() {
                 }}
                     transition={{ delay: .7 }}
                 >
-                    <h1>Get in touch with me</h1>
-                    <p style={{ fontWeight: 100 }}>Let's transform an idea into reality!</p>
+                    <h1 className='font-bold'>Get in touch with me</h1>
+                    <p style={{ fontWeight: 200 }} className='py-4'>Let's transform an idea into reality!</p>
                 </motion.div>
                 <div style={{
                     transform: isInView ? 'none' : 'translateY(-200px)', opacity: isInView ? 1 : 0,
                     transition: "transform 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s, opacity 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
-                }} className='contactme md:row-start-2 p-[1em] inline-flex justify-between md:w-10/12 items-center text-[0.9em] lg:text-[1.5em]'>
+                }} className='rounded-[10px] contactme md:row-start-2 p-[2em] inline-flex justify-between md:w-10/12 items-center text-[0.9em] lg:text-[1.5em]'>
                     <a className='inline-flex items-center' href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>
                         <div className='opacity-[.7]'>
                             <FaEnvelope size={25}></FaEnvelope>
@@ -38,7 +38,7 @@ export default function Contactme() {
                 <div style={{
                     transform: isInView ? 'none' : 'translateY(-200px)', opacity: isInView ? 1 : 0,
                     transition: "transform 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s, opacity 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
-                }}  className='contactme md:row-start-2 p-[1em] inline-flex justify-between md:w-10/12 items-center text-[0.9em] lg:text-[1.5em]'>
+                }}  className='rounded-[10px] contactme md:row-start-2 p-[2em] inline-flex justify-between md:w-10/12 items-center text-[0.9em] lg:text-[1.5em]'>
                     <a className='inline-flex items-center' href="tel:09-968935307">
                         <div className='opacity-[.7]'>
                             <FaPhone size={25}></FaPhone>

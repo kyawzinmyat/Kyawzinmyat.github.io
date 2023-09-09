@@ -12,7 +12,7 @@ export default function Footer() {
                     <div>
                         <h1 className='py-2 text-lg'>Kyaw Zin Myat</h1>
                         <p className='py-2'>20 Years Old</p>
-                        <p className='py-2'>Junior Software Developer</p>
+                        <p className='py-2'>Software Developer</p>
                     </div>
                     <div className='md:text-md text-xs sm:text-sm'>
                         <ul>
