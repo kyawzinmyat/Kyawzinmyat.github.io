@@ -12,10 +12,6 @@ export default function Navbar({ activePage }) {
     let onClickHamburger = () => {
         const hb = document.getElementById('nav-toggle');
         hb.classList.toggle('nav-open');
-        // let subNav = document.getElementById('sub-nav');
-        // let subButton = document.getElementById('sub-button');
-        // subNav.classList.toggle('hidden');
-        // subButton.classList.toggle('hidden');
         setOpen(!open);
     }
 

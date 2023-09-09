@@ -1,13 +1,23 @@
 import '../styles/landing.css'
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa'
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
+import { useRef } from 'react'
 
 export default function Landing() {
+  const ref = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: ref,
+    offset: ['end end', 'end start']
+  })
+
+  const background = useTransform(scrollYProgress, pos => {
+    if (pos < 0.5) return `linear-gradient(-${pos * 365}deg , rgba(0, 0, 0, .1) 70%,  rgba(0, 0, 0, .8) 50%,  rgba(0, 0, 0, .8) 50%,var(--primary-accent-color)  100%)`
+  })
+
+  const opacity = useTransform(scrollYProgress, [0, 0.8, 1], [1, 0.2, 0])
 
   return (
-    <motion.div initial={{ opacity: 0.7 }} viewport={{ once: true }} whileInView={{
-      opacity: 1,
-    }}
+    <motion.div ref={ref} style={{background, opacity}} 
       transition={{ delay: .2 }} className='box landing-body wrapper flex justify-center items-center relative top-[-150px]'>
       <div className='flex justify-center items-center'>
         <div className='lg:grid lg:grid-cols-1 md:w-8/12 w-10/12 mx-auto my-[4em] grid'>

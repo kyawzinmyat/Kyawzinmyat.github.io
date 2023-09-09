@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import '../../styles/technicalStacks.css'
+import { motion, useInView, useTransform } from 'framer-motion';
+import CardTitle from './CardTitle';
 
 
-export default function TechnicalCard({ information, title }) {
+export default function TechnicalCard({ information, title, setCurrentImage }) {
 
     let [click, setClick] = useState();
 
@@ -10,35 +12,25 @@ export default function TechnicalCard({ information, title }) {
         setClick(!click);
     }
 
-    let classAccordian = 'accordian  rounded-[5px] row-span-3 shadow-lg';
-    if (click) classAccordian = 'accordian  rounded-[5px] row-span-3 shadow-lg accordian-expand';
-    if (click === false) classAccordian = 'accordian  rounded-[5px] row-span-3 shadow-lg accordian-collapse';
+    let classAccordian = 'rounded-[5px] row-span-3 shadow-lg';
+    if (click) classAccordian = 'rounded-[5px] row-span-3 shadow-lg ';
+    if (click === false) classAccordian = 'rounded-[5px] row-span-3 shadow-lg';
 
     return (
         <div>
             <div id='accordian' className={classAccordian} onClick={onClickAccordian}>
-                <h3 className='text-sm md:text-xl font-medium text-center p-5 cursor-pointer h-[80px]  primary-color rounded-[20px]'>{title}</h3>
-                <div className='p-5 md:text-[15px] text-[10px] primary-color font-md'>
-                    {information.map(
-                        (inf, index) => {
-                            if (inf.length > 1) {
-                                return (<div key={index}>
-                                    <p className='my-3'>{inf[0]}</p>
-                                    <ul key={index} className=' p-2 flex flex-col gap-5'>
-                                        {
-                                            inf.slice(1).map(
-                                                (innerInf, i) => {
-                                                    return <li key={i}>{innerInf}</li>
-                                                }
-                                            )
-                                        }
-                                    </ul>
-                                    <br></br></div>)
-                            }else if (inf.length <= 1 ){
-                                return <p className='my-3  md:p-5 p-1' key={index}>{inf[0]}</p>
+                {/* <h3 className='text-sm md:text-xl font-medium text-center p-5 cursor-pointer h-[80px]  primary-color rounded-[20px]'>{title}</h3> */}
+                <div className='flex gap-20 items-start w-full p-5 md:text-[15px] text-[10px] primary-color font-md'>
+                    <div className='w-full flex flex-col xl:gap-20 lg:gap-10'>
+                        {information.map(
+                            (inf, index) => {
+
+                                return <CardTitle setCurrentImage={setCurrentImage} image={inf[1]} title={inf[0]} key={index}></CardTitle>
+
                             }
-                        }
-                    )}
+                        )}
+                    </div>
+                    
                 </div>
             </div>
         </div>

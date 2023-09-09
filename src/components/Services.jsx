@@ -12,7 +12,7 @@ export default function Services() {
 
     return (
         <div className='box'>
-            <h1 className='p-[3em] w-11/12 md:w-8/12 mx-auto text-center'>Employ the services to keep your company abreast of new technological developments!</h1>
+            <h1 className='p-[3em] w-11/12 md:w-8/12 mx-auto text-center secondary-gradient-color'>Employ the services to keep your company abreast of new technological developments!</h1>
             <div className='grid grid-cols-1 grid-rows-4 md:grid-rows-2 mx-auto gap-10 w-11/12 md:w-10/12 text-left md:grid-cols-2 lg:grid-cols-3'>
                 <motion.div viewport={{ once: true }} whileInView={{opacity: active === 0 ? 1: 0.5}} transition={{ delay: .3 }}
  initial={{opacity: 0}} className={'rounded-[15px] md:col-start-2 shadow-sm shadow-neutral-700 p-[2em]'} style={active === 0 ? {
