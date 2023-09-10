@@ -21,7 +21,7 @@ export default function TechnicalCard({ information, title, setCurrentImage }) {
             <div id='accordian' className={classAccordian} onClick={onClickAccordian}>
                 {/* <h3 className='text-sm md:text-xl font-medium text-center p-5 cursor-pointer h-[80px]  primary-color rounded-[20px]'>{title}</h3> */}
                 <div className='flex gap-20 items-start w-full p-5 md:text-[15px] text-[10px] primary-color font-md'>
-                    <div className='w-full flex flex-col xl:gap-20 lg:gap-10'>
+                    <div className='w-full flex flex-col '>
                         {information.map(
                             (inf, index) => {
                                 return <CardTitle setCurrentImage={setCurrentImage} image={inf[1]} title={inf[0]} key={index}></CardTitle>

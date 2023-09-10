@@ -36,3 +36,8 @@
 .nav-open .hamburger::before{
     opacity: 0;
 }
+
+.nav-open{
+    position: absolute;
+    inset: 0 0 0 0;
+}

@@ -97,3 +97,15 @@
         right: 0;
     }
 } 
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 3px;
+    border-radius: 10px;
+    opacity: 0.8;
+    background: var(--secondary-accent-color);
+}

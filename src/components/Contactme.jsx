@@ -8,7 +8,7 @@ export default function Contactme() {
     const subject = '';
     const body = '';
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
+    const isInView = useInView(ref, { once: true, margin: "-50% 0% -50% 0%" })
 
     return (
         <div className='box' id='contactme' ref={ref}>
