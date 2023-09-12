@@ -116,13 +116,14 @@ export default function Navbar({ activePage }) {
                             )
                         }
                     </AnimatePresence>
-                    <ul className='mobile-hide origin-center flex justify-center items-center md:flex md:flex-row md:justify-evenly md:m-0  md:gap-0 mx-auto flex-col w-4/12 sm:text-xl md:text-lg' id='sub-nav'>
-                        <li className={homeNavClass}><a className='font-extrabold' href='/'>Home</a></li>
-                        {/* <li className={aboutmeNavClass}><a className='font-extrabold' href='/aboutme/'>About Me</a></li> */}
-                        <li className={projectsNavClass}><a className='font-extrabold' href='/projects/'>Projects</a></li>
-                    </ul>
+
                     <div className='font-extrabold text-xl md:my-0 m-3 hidden md:block' id='sub-button'>
-                        <PrimaryButton><a href='#contactme' className='hover:text-black font-extrabold'>Contact Me</a></PrimaryButton>
+                        <ul className='mobile-hide origin-center flex justify-center items-center md:flex md:flex-row md:justify-evenly md:m-0  md:gap-10 mx-auto flex-col w-full sm:text-xl md:text-lg' id='sub-nav'>
+                            <li className={homeNavClass}><a className='font-extrabold' href='/'>Home</a></li>
+                            {/* <li className={aboutmeNavClass}><a className='font-extrabold' href='/aboutme/'>About Me</a></li> */}
+                            <li className={projectsNavClass}><a className='font-extrabold' href='/projects/'>Projects</a></li>
+                            <PrimaryButton><a href='#contactme' className='hover:text-black font-extrabold'>Contact Me</a></PrimaryButton>
+                        </ul>
                     </div>
 
                 </div>

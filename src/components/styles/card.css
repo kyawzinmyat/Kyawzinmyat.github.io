@@ -19,8 +19,8 @@
     border-radius: 50%;
     background-color: white;
     z-index: 10;
-    top: 40px;
-    right: -15px;
+    top: 15em;
+    right: 15px;
 }
 
 @media (max-width: 500px){
@@ -35,12 +35,12 @@
 
     .technical-circle{
         position: absolute;
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
         background-color: white;
         z-index: 10;
-        top: 20px;
-        right: -4px;
+        top: 10em;
+        right: -6px;
     }
 }

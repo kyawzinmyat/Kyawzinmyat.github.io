@@ -23,13 +23,13 @@ export default function Contactme() {
                 </motion.div>
                 <div style={{
                     transform: isInView ? 'none' : 'translateY(-200px)', opacity: isInView ? 1 : 0,
-                    transition: "transform 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s, opacity 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
+                    transition: "transform 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s, opacity 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                 }} className='rounded-[10px] contactme md:row-start-2 p-[2em] inline-flex justify-between md:w-10/12 items-center text-[0.9em] lg:text-[1.5em]'>
                     <a className='inline-flex items-center' href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>
                         <div className='opacity-[.7]'>
                             <FaEnvelope size={25}></FaEnvelope>
                         </div>
-                        <span className='mx-[.7em] font-md'>Send me an Email</span>
+                        <span className='mx-[.7em] font-[600]'>Send me an Email</span>
                     </a>
                     <span>
                         <FaArrowRight size={18}></FaArrowRight>
@@ -37,13 +37,13 @@ export default function Contactme() {
                 </div>
                 <div style={{
                     transform: isInView ? 'none' : 'translateY(-200px)', opacity: isInView ? 1 : 0,
-                    transition: "transform 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s, opacity 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
+                    transition: "transform 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s, opacity 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                 }}  className='rounded-[10px] contactme md:row-start-2 p-[2em] inline-flex justify-between md:w-10/12 items-center text-[0.9em] lg:text-[1.5em]'>
                     <a className='inline-flex items-center' href="tel:09-968935307">
                         <div className='opacity-[.7]'>
                             <FaPhone size={25}></FaPhone>
                         </div>
-                        <span className='mx-[.7em] font-md'>Call me directly</span>
+                        <span className='mx-[.7em] font-[600]'>Call me directly</span>
                     </a>
                     <span>
                         <FaArrowRight size={18}></FaArrowRight>
