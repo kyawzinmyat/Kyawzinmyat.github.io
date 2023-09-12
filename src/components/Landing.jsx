@@ -50,7 +50,7 @@ export default function Landing() {
 
   return (
     <motion.div ref={ref} style={{ opacity,  background}}
-      transition={{ delay: .2 }} className='box landing-body wrapper flex justify-center items-center relative top-[-150px]'>
+      transition={{ delay: .2 }} className='box landing-body wrapper flex justify-center items-center relative'>
       {/* <motion.div style={{ background, position: 'absolute', width: '100%', height: '100%' }}>
 
       </motion.div> */}
@@ -61,13 +61,13 @@ export default function Landing() {
           </div> */}
           <div className='primary-color over p-10 text-center flex flex-col justify-end items-center'>
             <motion.div className='md:py-[2em] overflow-hidden py-[8em] text-pop-animation landing-text flex flex-col md:flex-row justify-center items-center' variants={containerVar} initial='initial' animate='open'>
-              <div className='w-full'>
+              <div className='w-full text-left'>
                 <motion.h1 variants = {iconsVar}  className='lg:text-2xl over md:text-xl sm:text-lg text-sm header-upper-text font-light'>Who Am I?</motion.h1>
                 <motion.p  variants = {iconsVar} className='my-5 body-text'>I'm an <strong className=''>enthusiastic software developer</strong> who lives in Yangon.</motion.p>
                 <motion.p  variants = {iconsVar} className='text-sm md:text-sm font-md'>Passionate about creating cutting-edge web applications with both frontend and backend functionality.</motion.p>
               </div>
               <motion.div className='w-full'>
-                <motion.div className='flex justify-center py-[2em] gap-10 overflow-hidden' >
+                <motion.div className='flex md:flex-col items-end md:justify-center py-[2em] gap-10 overflow-hidden' >
                   <motion.div variants={iconsVar}>
                     <FaGithub size='50px'></FaGithub>
                   </motion.div>

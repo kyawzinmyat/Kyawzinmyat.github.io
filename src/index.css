@@ -244,7 +244,7 @@ p{
 }
 
 .body-text{
-  line-height:60px;
+  line-height:65px;
   font-size: 4rem;
   letter-spacing: -1.5px;
 }
@@ -261,10 +261,10 @@ p{
   letter-spacing: -1.8px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 900px){
   .body-text{
     line-height: 28px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: -1.5px;
   }
 
@@ -341,7 +341,7 @@ p{
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
 
   p{
     font-size: 1rem;
