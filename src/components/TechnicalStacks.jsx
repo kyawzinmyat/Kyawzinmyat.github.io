@@ -88,21 +88,21 @@ export default function TechnicalStacks() {
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>Python</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90' || '' }></ProgressBar>
                             </div>
                             <span>90%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>JavaScript</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-70'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-70' || '' }></ProgressBar>
                             </div>
                             <span>70%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>Java</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-60'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-60' || '' }></ProgressBar>
                             </div>
                             <span>60%</span>
                         </div>
@@ -114,42 +114,42 @@ export default function TechnicalStacks() {
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>Django</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90' || '' }></ProgressBar>
                             </div>
                             <span>90%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>Flask</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90' || '' }></ProgressBar>
                             </div>
                             <span>90%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>Odoo</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90' || '' }></ProgressBar>
                             </div>
                             <span>90%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>Tailwindcss</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-80'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-80' || '' }></ProgressBar>
                             </div>
                             <span>80%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>Bootstrap</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-80'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-80' || '' }></ProgressBar>
                             </div>
                             <span>80%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>React</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-70'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-70' || '' }></ProgressBar>
                             </div>
                             <span>70%</span>
                         </div>
@@ -162,21 +162,21 @@ export default function TechnicalStacks() {
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>HTML</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90' || '' }></ProgressBar>
                             </div>
                             <span>90%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>CSS</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90' || '' }></ProgressBar>
                             </div>
                             <span>90%</span>
                         </div>
                         <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
                             <p className='col-span-full'>XML</p>
                             <div className='col-span-4'>
-                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90'}></ProgressBar>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-90' || '' }></ProgressBar>
                             </div>
                             <span>90%</span>
                         </div>

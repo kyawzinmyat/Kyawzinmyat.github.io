@@ -9,18 +9,18 @@ export default function Aboutme() {
     const { scrollYProgress } = useScroll(
         {
             target: ref,
-            offset: ["end end", "start start"]
+            offset: ["end end", "end start"]
         }
     )
 
     const opacity = useTransform(
         scrollYProgress,
-        [0, 0.3, 0.7], [0, 0.4, 1]
+        [0, 0.3, 0.7], [1, 0.5, 0]
     )
 
     return (
-        <motion.div className='box aboutme-container mx-auto my-5 py-[2em] primary-color text-center max-h-max' ref={ref}>
-            <motion.h1 className='md:text-4xl header-text text-xs sm:text-xl font-extrabold primary-color p-[2em] md:p-[5em]' style={{ opacity }}>A Brief Introduction of Myself</motion.h1>
+        <motion.div className='box aboutme-container mx-auto my-5 py-[2em] primary-color text-center max-h-max' ref={ref}  style={{ opacity }}>
+            <h1 className='md:text-4xl header-text text-xs sm:text-xl font-extrabold primary-color p-[2em] md:p-[5em]'>A Brief Introduction of Myself</h1>
             <div className='lg:w-9/12 w-full mx-auto about-me-container' style={{
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
