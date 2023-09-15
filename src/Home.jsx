@@ -6,11 +6,13 @@ import Landing from './components/Landing'
 import Aboutme from './components/Aboutme'
 import Services from './components/Services'
 import Contactme from './components/Contactme'
+import MiniNavbar from './components/MiniNavbar'
 
 export default function Home() {
 
   return (
     <>
+    <MiniNavbar></MiniNavbar>
       <Landing></Landing>
       <Aboutme></Aboutme>
       <div className='section-margin'>
