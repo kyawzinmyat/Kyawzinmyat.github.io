@@ -15,12 +15,12 @@ export default function Aboutme() {
 
     const opacity = useTransform(
         scrollYProgress,
-        [0, 0.3, 0.8], [1, 0.5, 0]
+        [0, 0.7, 0.8], [1, 0.8, 0]
     )
 
     return (
         <motion.div className='box aboutme-container mx-auto my-5 py-[2em] primary-color text-center max-h-max' ref={ref}  style={{ opacity }}>
-            <h1 className='md:text-4xl header-text text-xs sm:text-xl font-extrabold primary-color p-[2em] md:p-[5em]'>A Brief Introduction of Myself</h1>
+            <h1 className='md:text-4xl header-text text-xs sm:text-xl font-extralight primary-color p-[2em] md:p-[5em]'>A Brief Introduction of Myself</h1>
             <div className='lg:w-9/12 w-full mx-auto about-me-container' style={{
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
@@ -28,15 +28,15 @@ export default function Aboutme() {
                 <div className='md:gap-10 gap-y-10'>
                     <motion.div className='flex md:col-span-2 px-[2em] justify-end'>
                         <ul className='flex gap-5 md:text-[1.3rem] xl:text-[1.5rem] text-[0.6rem] sm:text-[0.9rem] p-[0.1em] about-me-sections'>
-                            <li className='p-[1em] relative font-bold secondary-bg rounded-full' style={active === 'professional' ? {opacity: 1 } : { opacity: 0.4 }} onClick={() => setActive('professional')}>
+                            <li className='p-[1em] relative font-light secondary-bg rounded-full' style={active === 'professional' ? {opacity: 1 } : { opacity: 0.4 }} onClick={() => setActive('professional')}>
                                 Professional
                                 {active === 'professional' &&<motion.div layoutId="underline" className='underline'></motion.div>}
                             </li>
-                            <li className='p-[1em] relative font-bold secondary-bg rounded-full' style={active === 'personal' ? {opacity: 1 } : { opacity: 0.4 }} onClick={() => setActive('personal')}>
+                            <li className='p-[1em] relative font-light secondary-bg rounded-full' style={active === 'personal' ? {opacity: 1 } : { opacity: 0.4 }} onClick={() => setActive('personal')}>
                                 Personal
                                 {active === 'personal' &&<motion.div layoutId="underline" className='underline'></motion.div>}
                             </li>
-                            <li className='p-[1em] relative font-bold secondary-bg rounded-full' style={active === 'education' ? {opacity: 1 } : { opacity: 0.4 }} onClick={() => setActive('education')}>
+                            <li className='p-[1em] relative font-light secondary-bg rounded-full' style={active === 'education' ? {opacity: 1 } : { opacity: 0.4 }} onClick={() => setActive('education')}>
                                 Education
                                 {active === 'education' &&<motion.div layoutId="underline" className='underline'></motion.div>}
                             </li>

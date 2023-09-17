@@ -30,7 +30,7 @@ export default function NeuralNetworkProject() {
                         Handwritten Recognition
                     </h2>
                     <p className='lg:text-sm xl:text-lg w-[30ch] text-sm md:w-10/12 mx-auto lg:p-0  font-md py-5 md:p-5 lg:py-4'>Classic Simple Neural Network Project to Recognize Digits Starting from 0 to 9 Without Using Predefined Machine Learning Framework.</p>
-                    <p className='lg:py-4 p-2 text-xs font-md'>Technolgies Using/ </p><span>Python, Numpy, Pillow</span>
+                    <p className='lg:py-4 p-2 text-xs font-md'>Technolgies Using/ </p><span className='font-extralight'>Python, Numpy, Pillow</span>
                 </motion.div>
             </div>
             <div className='col-span-2 grid grid-cols-1 xl:grid-cols-3'>

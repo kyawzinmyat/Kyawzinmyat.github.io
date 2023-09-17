@@ -1,21 +1,20 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 import { AnimatePresence, motion, useInView } from 'framer-motion'
 import SubmenuContext from '../context/SubmenuContext'
 
 const subNavs = ['aboutme', 'technical', 'services', 'contactme', 'certificates', 'goals']
 
-export default function MiniNavbar() {
+export default function MiniNavbar({allSections}) {
 
   const {currentSection} = useContext(SubmenuContext);
-  let [open, setOpen] = useState(true)
+  let [open, setOpen] = useState(false)
 
   const liVar = {
     initial: {
       scaleX: 0,
       transition: {
         duration: 0.1,
-        // ease: [1, 0.5, 0.36, 1]
       }
     },
     open: {
@@ -51,9 +50,11 @@ export default function MiniNavbar() {
       }
     }
   }
+  const {setAllSections} = useContext(SubmenuContext);
+  useEffect(() => setAllSections(allSections), [])
 
   return (
-    <div className='box top-[100px] md:top-[150px] font-bold text-black' style={{position: 'fixed', zIndex: '999999999', inset: '100px 100% 100% 0'}}>
+    <div className='box top-[10px] md:top-[150px] font-bold text-black' style={{position: 'fixed', zIndex: '999999999', inset: '90px 100% 100% 0'}}>
       <div className='relative flex'>
         <AnimatePresence>
           {
@@ -63,7 +64,7 @@ export default function MiniNavbar() {
               <motion.div className='gap-0 flex origin-left md:flex-row justify-center flex-col overflow-scroll' variants={containerVar} exit='initial' initial='initial' animate='open' styel={{ zIndex: 99 }}>
                 {subNavs.map(nav =>
                   <motion.div variants={liVar} key={nav} className='bg-white p-5 overflow-hidden origin-left relative' >
-                    <a onClick={() => alert(1)} className='font-bold overflow-hidden p-[0.3em] text-md flex justify-center items-center'>
+                    <a href={`#${nav}`} className='font-bold overflow-hidden p-[0.3em] text-md flex justify-center items-center'>
                       {nav}
                     </a>
                     {currentSection === nav &&<motion.div layoutId="underline_submenu" style={{color: 'white', background: 'black', position: 'absolute', width: '80%', height:'10px', margin: '0 auto'}}></motion.div>}

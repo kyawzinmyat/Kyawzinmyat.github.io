@@ -9,10 +9,10 @@ import Contactme from './components/Contactme'
 import MiniNavbar from './components/MiniNavbar'
 import SubmenuContext from './context/SubmenuContext'
 import { SubmenuProvider } from './context/SubmenuContext'
+import LifeEvent from './components/LifeEvent'
 
 
 export default function Home() {
-  const {setAllSections} = useContext(SubmenuContext);
   const LANDING = useRef(null);
   const ABOUTME = useRef(null);
   const TECHNICAL = useRef(null);;
@@ -21,16 +21,19 @@ export default function Home() {
   const CERTIFICATES = useRef(null);
   const GOALS = useRef(null);
   const FOOTER = useRef(null);
-
-  useEffect(
-    () => {
-      setAllSections([ABOUTME, TECHNICAL, SERVICES, CONTACTME, CERTIFICATES, GOALS])
-    }
-    , [])
+  const allSections = [ABOUTME, TECHNICAL, SERVICES, CONTACTME, CERTIFICATES, GOALS];
+  
+  // useEffect(
+  //   () => {
+  //     setAllSections([ABOUTME, TECHNICAL, SERVICES, CONTACTME, CERTIFICATES, GOALS])
+  //   }
+  //   , [])
 
   return (
     <>
-      <MiniNavbar></MiniNavbar>
+    <SubmenuProvider>
+      <MiniNavbar allSections={allSections}></MiniNavbar>
+    </SubmenuProvider>
       <div ref={ABOUTME} id='aboutme'>
         <Landing></Landing>
         <Aboutme></Aboutme>
@@ -45,6 +48,9 @@ export default function Home() {
         <div ref={CONTACTME} id='contactme'>
           <Contactme></Contactme>
         </div>
+      </div>
+      <div className='section-margin'>
+        <LifeEvent></LifeEvent>
       </div>
       <div className='section-margin' id='certificates' ref={CERTIFICATES}>
         <Certificates></Certificates>

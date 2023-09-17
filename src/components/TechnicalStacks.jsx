@@ -61,9 +61,9 @@ export default function TechnicalStacks() {
     return (
         <motion.div className='box' >
             <div className='primary-color'>
-                <h1 className='font-extrabold text-center primary-color header-upper-text'>Technical Stack</h1>
+                <h1 className='font-md text-center primary-color header-upper-text'>Technical Stack</h1>
                 <div className='md:w-4/12 w-8/12 my-5 mx-auto'>
-                    <p className='text-center md:p-4 my-[3rem] md:text-md font-md text-sm'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
+                    <p className='text-center md:p-4 my-[1rem] md:text-md font-md text-sm'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
                 </div>
             </div>
             {/* <div className='primary-color my-4' >
