@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import TechnicalStacks from './components/TechnicalStacks'
 import Certificates from './components/Certificates'
 import Goals from './components/Goals'
@@ -7,25 +7,49 @@ import Aboutme from './components/Aboutme'
 import Services from './components/Services'
 import Contactme from './components/Contactme'
 import MiniNavbar from './components/MiniNavbar'
+import SubmenuContext from './context/SubmenuContext'
+import { SubmenuProvider } from './context/SubmenuContext'
+
 
 export default function Home() {
+  const {setAllSections} = useContext(SubmenuContext);
+  const LANDING = useRef(null);
+  const ABOUTME = useRef(null);
+  const TECHNICAL = useRef(null);;
+  const SERVICES = useRef(null);
+  const CONTACTME = useRef(null);
+  const CERTIFICATES = useRef(null);
+  const GOALS = useRef(null);
+  const FOOTER = useRef(null);
+
+  useEffect(
+    () => {
+      setAllSections([ABOUTME, TECHNICAL, SERVICES, CONTACTME, CERTIFICATES, GOALS])
+    }
+    , [])
 
   return (
     <>
-    <MiniNavbar></MiniNavbar>
-      <Landing></Landing>
-      <Aboutme></Aboutme>
-      <div className='section-margin'>
+      <MiniNavbar></MiniNavbar>
+      <div ref={ABOUTME} id='aboutme'>
+        <Landing></Landing>
+        <Aboutme></Aboutme>
+      </div>
+      <div ref={TECHNICAL} id='technical' className='section-margin'>
         <TechnicalStacks></TechnicalStacks>
       </div>
       <div className='section-margin'>
-        <Services></Services>
-        <Contactme></Contactme>
+        <div ref={SERVICES} id='services'>
+          <Services></Services>
+        </div>
+        <div ref={CONTACTME} id='contactme'>
+          <Contactme></Contactme>
+        </div>
       </div>
-      <div className='section-margin'>
+      <div className='section-margin' id='certificates' ref={CERTIFICATES}>
         <Certificates></Certificates>
       </div>
-      <div className='section-margin'>
+      <div className='section-margin' id='goals' ref={GOALS}>
         <Goals></Goals>
       </div>
     </>

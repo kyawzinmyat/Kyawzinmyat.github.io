@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './Home'
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
+import { SubmenuProvider } from './context/SubmenuContext';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -17,7 +18,9 @@ function App() {
     >
       {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
       <Navbar activePage='home'></Navbar>
-      <Home></Home>
+      <SubmenuProvider>
+        <Home></Home>
+      </SubmenuProvider>
       <div className='section-margin'>
         <Footer></Footer>
       </div>

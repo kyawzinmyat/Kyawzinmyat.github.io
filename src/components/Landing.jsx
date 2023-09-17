@@ -1,4 +1,4 @@
-import '../styles/landing.css'
+// import '../styles/landing.css'
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa'
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from 'react'
@@ -20,15 +20,15 @@ export default function Landing() {
     return 'radial-gradient(cyan at center, black 90%, var(--primary-accent-color) 90%)'
   })
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 0.8], [1, 0.2, 0])
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 0.7], [1, 0.8, 0])
   const iconsVar = {
     open: {
       y: '0vh',
-      transition: '1s ease-in-out ',
+      transition: '0.6s ease-in-out ',
     },
     initial: {
       y: '80vh',
-      transition: '1s ease'
+      transition: '0.6s ease'
     }
   }
 
@@ -41,30 +41,24 @@ export default function Landing() {
     },
     open: {
       transition: {
-        staggerChildren: 0.4,
-        delayChildren: 0.5,
+        staggerChildren: 0.3,
+        delayChildren: 0.3,
         stagerDirection: -1
       }
     }
   }
 
   return (
-    <motion.div ref={ref} style={{ opacity,  background}}
+    <motion.div ref={ref} style={{ opacity, background, zIndex: 1 }}
       transition={{ delay: .2 }} className='box landing-body wrapper flex justify-center items-center relative'>
-      {/* <motion.div style={{ background, position: 'absolute', width: '100%', height: '100%' }}>
-
-      </motion.div> */}
       <motion.div className='flex justify-center items-center'  >
         <div className='lg:grid lg:grid-cols-1 md:w-8/12 w-10/12 mx-auto my-[4em] grid'>
-          {/* <div className='landing-animation'>
-            <img src={SteveImage} alt='Steve Image'></img>
-          </div> */}
-          <div className='primary-color over p-10 text-center flex flex-col justify-end items-center'>
+          <div className='primary-color over p-10 text-center flex flex-col justify-end items-center border-l-2'>
             <motion.div className='md:py-[2em] overflow-hidden py-[8em] text-pop-animation landing-text flex flex-col md:flex-row justify-center items-center' variants={containerVar} initial='initial' animate='open'>
               <div className='w-full text-left'>
-                <motion.h1 variants = {iconsVar}  className='lg:text-2xl over md:text-xl sm:text-lg text-sm header-upper-text font-light'>Who Am I?</motion.h1>
-                <motion.p  variants = {iconsVar} className='my-5 body-text'>I'm an <strong className=''>enthusiastic software developer</strong> who lives in Yangon.</motion.p>
-                <motion.p  variants = {iconsVar} className='text-sm md:text-sm font-md'>Passionate about creating cutting-edge web applications with both frontend and backend functionality.</motion.p>
+                <motion.h1 variants={iconsVar} className='lg:text-2xl over md:text-xl sm:text-lg text-sm header-upper-text font-light'>Who Am I?</motion.h1>
+                <motion.p variants={iconsVar} className='my-5 body-text'>I'm an <strong className=''>enthusiastic software developer</strong> who lives in Yangon.</motion.p>
+                <motion.p variants={iconsVar} className='text-sm md:text-sm font-md'>Passionate about creating cutting-edge web applications with both frontend and backend functionality.</motion.p>
               </div>
               <motion.div className='w-full'>
                 <motion.div className='flex md:flex-col items-end md:justify-center py-[2em] gap-10 overflow-hidden' >
@@ -82,9 +76,6 @@ export default function Landing() {
             </motion.div>
           </div>
         </div>
-        {/* <div className='foreground'>
-          <img src={EarhtImage}></img>
-        </div> */}
       </motion.div>
     </motion.div>
   )
