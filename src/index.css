@@ -400,3 +400,15 @@ p{
   top:0;
   background-color: white;
 }
+
+@media (max-width: 900px){
+  .vb-bar{
+    width: 6px;
+    }
+}
+
+@media (max-width: 400px) {
+  .vb-bar{
+    width: 3px;
+   }
+}

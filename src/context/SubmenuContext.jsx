@@ -18,7 +18,6 @@ export const SubmenuProvider = (props) => {
         for (var section of allSections){
             if (section.current.getBoundingClientRect().y <= 100){
                 current = section.current.id 
-                console.log(current)
             }
         }
         setCurrentSection(current)

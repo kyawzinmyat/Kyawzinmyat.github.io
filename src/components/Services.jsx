@@ -23,8 +23,6 @@ export default function Services() {
           transition: '1s ease'
         }
       }
-
-      useEffect(() => console.log(isInView), [isInView])
     
       const containerVar = {
         initial: {
