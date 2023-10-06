@@ -24,7 +24,7 @@ export default function LifeEvent() {
                         <div className='grid grid-cols-1 gap-10'>
                             <Event icon={<LuSchool2/>} left texts={['Graduated from High School', '(2019)']}></Event>
                             <Event icon={<MdOutlineSchool/>}  texts={['Persue a degree', 'at UCSY', '(2019)']}></Event>  
-                            <Event icon={<MdOutlineWorkOutline/> } left  texts={['Landed first developer job', 'at GCA', '(2022 - present)']}></Event>                                                                              
+                            <Event icon={<MdOutlineWorkOutline/> } left  texts={['Landed a first developer job', 'at GCA', '(2022 - present)']}></Event>                                                                              
                         </div>
                     </motion.div>
                     {/* <div className='w-full sticky top-0 h-[60vh] flex items-center'>

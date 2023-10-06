@@ -57,7 +57,7 @@ export default function Navbar({ activePage }) {
         exit: {
             scaleY: 0,
             transition: {
-                delay: 0.3,
+                delay: 0.5,
                 duration: 0.5,
                 ease: [0.22, 1, 0.36, 1]
             }
@@ -81,15 +81,15 @@ export default function Navbar({ activePage }) {
     const containerVar = {
         initial: {
             transition: {
-                staggerChildren: 0.09,
-                stagerDirection: -1
+                staggerChildren: 0.2,
+                staggerDirection: -1,
             }
         },
         open: {
             transition: {
                 staggerChildren: 0.09,
                 delayChildren: 0.3,
-                stagerDirection: 1
+                staggerDirection: 1,
             }
         }
     }

@@ -41,7 +41,7 @@ export default function Landing() {
     },
     open: {
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.2,
         delayChildren: 0.3,
         stagerDirection: -1
       }
