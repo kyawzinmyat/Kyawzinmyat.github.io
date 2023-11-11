@@ -51,9 +51,9 @@ export default function Aboutme() {
                         transition={{ duration: .4 }} >
                             <div className='p-[2em] w-full sm:w-10/12 text-left flex justify-center items-center'>
                                 <>
-                                    <div className='font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text font-sans'>
-                                        <p>My primary responsibilities include <strong className='font-bold'>managing the timeline, maintaining communication with senior developers, and delivering the finished product on time</strong> while providing software implementations for customer demands via project manager and team leader. I took involved in my seniors' projects in addition to my own by helping them with bug finding, brainstorming with them to come up with better solutions, and taking ownership of their assignments.</p>
-                                        <p className='my-[2em]'>I have experience working on a variety of ERP projects, including those related to the manufacturing of shoes, iron and steel, processed foods, managing  human resources, and more. They used a number of modules, including inventory, invoicing, sales, and procurement. I must implement extensive customizations in addition to the well-functioning modules to satisfy the client's localization requirements and address the business need.</p>
+                                    <div className='font-md text-sm md:text-lg lg:py[5em] py-[3em] about-me-text font-sans max-w-[80ch]'>
+                                        <p className='leading-9'>My primary responsibilities include <strong className='font-bold'>managing the timeline, maintaining communication with senior developers, and delivering the finished product on time</strong> while providing software implementations for customer demands via project manager and team leader. I took involved in my seniors' projects in addition to my own by helping them with bug finding, brainstorming with them to come up with better solutions, and taking ownership of their assignments.</p>
+                                        <p className='my-[2em] leading-9'>I have experience working on a variety of ERP projects, including those related to the manufacturing of shoes, iron and steel, processed foods, managing  human resources, and more. They used a number of modules, including inventory, invoicing, sales, and procurement. I must implement extensive customizations in addition to the well-functioning modules to satisfy the client's localization requirements and address the business need.</p>
                                     </div>
                                 </>
                             </div>
@@ -65,9 +65,8 @@ export default function Aboutme() {
                         transition={{ duration: .4 }} >
                                 <div className='p-[2em] w-full sm:w-10/12 text-left flex justify-center items-center'>
                                     <>
-                                        <div className='font-mono font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text'>
-                                            <p>I'm currently 20 years old living in Kamayut Township, Yangon. Playing video games and learning about new technologies, such as networking, software, and computer architecture, are two of my passions.</p>
-                                            <p className='my-3'> I'm pursuing a Bachelor in Computer Science at an online university right now.</p>
+                                        <div className='font-mono font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text max-w-[80ch]'>
+                                            <p className='leading-9'>I'm currently 20 years old living in Kamayut Township, Yangon. Playing video games and learning about new technologies, such as networking, software, and computer architecture, are two of my passions. I'm pursuing a Bachelor in Computer Science at an online university right now.</p>
                                         </div>
                                     </>
                                 </div>
@@ -79,10 +78,9 @@ export default function Aboutme() {
                         transition={{ duration: .4 }} >
                             <div className='p-[2em] w-full sm:w-10/12 text-left flex justify-center items-center'>
                                 <>
-                                    <div className='font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text'>
-                                        <p>In 2019, I earned my high school diploma.
-                                            At UCSY, I majored in computer science, but I no longer do so due to the political controversy.</p>
-                                        <p className='my-3'>During the COVID pandemic, I took computer science courses like CS50 and Object-Oriented Java programming to advance my skills.</p>
+                                    <div className='font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text max-w-[80ch]'>
+                                        <p className='leading-9'>In 2019, I earned my high school diploma.
+                                            At UCSY, I majored in computer science, but I no longer do so due to the political controversy. During the COVID pandemic, I took computer science courses like CS50 and Object-Oriented Java programming to advance my skills.</p>
                                     </div>
                                 </>
                             </div>

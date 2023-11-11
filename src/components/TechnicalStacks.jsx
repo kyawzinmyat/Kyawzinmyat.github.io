@@ -63,7 +63,7 @@ export default function TechnicalStacks() {
             <div className='primary-color'>
                 <h1 className='font-md text-center primary-color header-upper-text'>Technical Stack</h1>
                 <div className='md:w-4/12 w-8/12 my-5 mx-auto'>
-                    <p className='text-center md:p-4 my-[1rem] md:text-md font-md text-sm'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
+                    <p className='text-center md:p-4 my-[1rem] text-gray-400 md:text-[1em]'>I used a variety of technologies as a Developer responsible for building dynamic web apps to provide high-quality software. </p>
                 </div>
             </div>
             {/* <div className='primary-color my-4' >
@@ -152,6 +152,13 @@ export default function TechnicalStacks() {
                                 <ProgressBar height='20px' progress={isInView && 'linear-progress-70' || '' }></ProgressBar>
                             </div>
                             <span>70%</span>
+                        </div>
+                        <div className='gap-5 primary-color font-extrabold grid grid-cols-5'>
+                            <p className='col-span-full'>React Native</p>
+                            <div className='col-span-4'>
+                                <ProgressBar height='20px' progress={isInView && 'linear-progress-50' || '' }></ProgressBar>
+                            </div>
+                            <span>50%</span>
                         </div>
                     </div>
 

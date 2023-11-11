@@ -58,6 +58,21 @@
     }
 }
 
+@keyframes linear-progress-bar-50{
+    0% {
+        width: 0%;
+        opacity: 0;
+        background-color: var(--color-secondary);
+    }
+
+    100%{
+        width: 50%;
+        opacity: 1;
+        background: var(--color-primary);
+        transform: scaleX(1);
+    }
+}
+
 .linear-progress-90{
     border-radius: 10px;
     animation-delay: 3s;
@@ -76,8 +91,15 @@
     animation: linear-progress-bar-70  3s ease-in-out forwards;
 }
 
+
 .linear-progress-60{
     border-radius: 10px;
     animation-delay: 3s;
     animation: linear-progress-bar-60  3s ease-in-out forwards;
+}
+
+.linear-progress-50{
+    border-radius: 10px;
+    animation-delay: 3s;
+    animation: linear-progress-bar-50  3s ease-in-out forwards;
 }

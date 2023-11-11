@@ -47,12 +47,14 @@
 }
 
 .about-me-text{
-    /* display: -webkit-box;
+    /* /* display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: scroll; */
-    min-height: 500px;
-}
+    max-height: 80ch;
+    line-height: 100;
+    font-size: 1000;
+} */
 
 .aboutme-image-container{
     position: absolute;

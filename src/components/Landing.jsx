@@ -58,7 +58,7 @@ export default function Landing() {
               <div className='w-full text-left'>
                 <motion.h1 variants={iconsVar} className='lg:text-2xl over md:text-xl sm:text-lg text-sm header-upper-text font-light'>Who Am I?</motion.h1>
                 <motion.p variants={iconsVar} className='my-5 body-text'>I'm an <strong className=''>enthusiastic software developer</strong> who lives in Yangon.</motion.p>
-                <motion.p variants={iconsVar} className='text-sm md:text-sm font-md'>Passionate about creating cutting-edge web applications with both frontend and backend functionality.</motion.p>
+                <motion.p variants={iconsVar} className='text-sm md:text-lg font-md text-gray-400 font-md'>Passionate about creating cutting-edge web applications with both frontend and backend functionality.</motion.p>
               </div>
               <motion.div className='w-full'>
                 <motion.div className='flex md:flex-col items-end md:justify-center py-[2em] gap-10 overflow-hidden' >
