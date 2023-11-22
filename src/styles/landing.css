@@ -1,17 +1,23 @@
-.landing-body {
+.git-body {
     background-repeat: no-repeat;
-    /* background:   linear-gradient(-180deg , rgba(0, 0, 0, .1) 40%,  rgba(0, 0, 0, .8) 50%, var(--primary-accent-color) 80%,var(--primary-accent-color) 100%); */
+    background:   url('../assets/gitcommit.png');
     /* Full height */
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: cover;
-    height: min(100vh, 1600px);
-    position: relative;
+    /* height: min(100vh, 1600px); */
+    position: fixed;
+    height: 100vh;
+    inset: 0 0 0 0;
 }
 
-.landing-text{
+.landing-body {
+    
+}
+
+/* .landing-text{
     z-index: 1;
 }
 
@@ -27,7 +33,7 @@
     border: 0;
     bottom: 0;
     mix-blend-mode: lighten;
-}
+} */
 
 /* @keyframes landing-ani {
     0% {

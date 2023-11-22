@@ -1,10 +1,11 @@
-// import '../styles/landing.css'
+import '../styles/landing.css'
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa'
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from 'react'
 
 export default function Landing() {
   const ref = useRef(null);
+  
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['end end', 'end start']
@@ -20,7 +21,9 @@ export default function Landing() {
     return 'radial-gradient(cyan at center, black 90%, var(--primary-accent-color) 90%)'
   })
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 0.7], [1, 0.8, 0])
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 0.6], [1, 0.5, 0])
+  const gitOpacity = useTransform(scrollYProgress, [0, .3, .6, .7], [0.1, 0.2, .1, 0])
+
   const iconsVar = {
     open: {
       y: '0vh',
@@ -49,9 +52,11 @@ export default function Landing() {
   }
 
   return (
-    <motion.div ref={ref} style={{ opacity, background, zIndex: 1 }}
-      transition={{ delay: .2 }} className='box landing-body wrapper flex justify-center items-center relative'>
-      <motion.div className='flex justify-center items-center'  >
+    <motion.div ref={ref} className='box wrapper flex justify-center items-center relative overflow-y-scroll h-[85vh] mb-[200px]'>
+      <motion.div style={{ 
+      opacity, zIndex: 9099,  
+    }}
+      transition={{ delay: .2 }}  className='flex justify-center items-center'  >
         <div className='lg:grid lg:grid-cols-1 md:w-8/12 w-10/12 mx-auto my-[4em] grid'>
           <div className='primary-color over p-10 text-center flex flex-col justify-end items-center border-l-2'>
             <motion.div className='md:py-[2em] overflow-hidden py-[8em] text-pop-animation landing-text flex flex-col md:flex-row justify-center items-center' variants={containerVar} initial='initial' animate='open'>
@@ -75,6 +80,11 @@ export default function Landing() {
               </motion.div>
             </motion.div>
           </div>
+        </div>
+      </motion.div>
+      <motion.div style={{opacity: gitOpacity}}>
+        <div className='git-body'>
+
         </div>
       </motion.div>
     </motion.div>
