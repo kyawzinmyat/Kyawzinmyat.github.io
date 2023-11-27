@@ -76,7 +76,7 @@ export default function Services() {
                         <h3>ERP Business Website</h3>
                     </span>
                     <div className='my-[2em]'>
-                        <p>Create a striking, straightforward, and contemporary landing page to impress visitors and strengthen customer relationships. </p>
+                        <p>Automate repetitive daily business tasks with industry-proven, high-performing ERP software.</p>
                     </div>
                 </motion.div>
                 <motion.div viewport={{ once: true }}  transition={{ delay: .6 }}

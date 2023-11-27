@@ -83,7 +83,13 @@ export default function Landing() {
         </div>
       </motion.div>
       <motion.div style={{opacity: gitOpacity}}>
+<<<<<<< Updated upstream
         <div className='git-body'>
+=======
+        <div className='git-body' style={{
+          zIndex: -1
+        }}>
+>>>>>>> Stashed changes
 
         </div>
       </motion.div>

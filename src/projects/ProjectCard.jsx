@@ -49,11 +49,12 @@ export default function ProjectCard({ title, mobileImg, img, description, techni
                         whileInView={
                             { opacity: 1, scale: 1, translateY: 0 }
                         }
+                        viewport={{ once: true }}
                         transition={{ delay: 0.5 }}
                     >
                         <h2 className='secondary-bg secondary-color md:text-md sm-text-sm  font-bold secondary-accent-bg p-5 rounded-full'>{title}</h2>
-                        <p className='lg:text-sm xl:text-lg w-[30ch] text-sm md:w-10/12 mx-auto lg:p-0  font-md py-5 md:p-5 lg:py-4'>{description}</p>
-                        <p className='lg:py-2 p-2 text-xs font-light'>Technolgies Using/ </p><span className='font-light'>{technicals}</span>
+                        <p className='lg:text-sm xl:text-lg w-[30ch] tracking-tighter text-gray-300 text-sm md:w-10/12 mx-auto lg:p-0  font-md py-5 md:p-5 lg:py-4'>{description}</p>
+                        <p className='lg:py-2 p-2 text-xs font-light  text-gray-400'>Technolgies Using/ </p><span className='font-light  text-gray-400'>{technicals}</span>
                     </motion.div>
                 </motion.div>
             </div>
