@@ -17,14 +17,15 @@ export default function LifeEvent() {
 
     return (
         <div>
-            <div className='primary-color my-4' >
+            <div className='primary-color my-4 box' >
                 <motion.div className='flex relative  w-10/12 items-start gap-20 mx-auto'>
                     <motion.div className='vb-bar vb origin-top' ref={ref} style={{ scaleY: scrollYProgress }}></motion.div>
                     <motion.div className='w-full' >
                         <div className='grid grid-cols-1 gap-10'>
                             <Event icon={<LuSchool2/>} left texts={['Graduated from High School', '(2019)']}></Event>
                             <Event icon={<MdOutlineSchool/>}  texts={['Persue a degree', 'at UCSY', '(2019)']}></Event>  
-                            <Event icon={<MdOutlineWorkOutline/> } left  texts={['Landed a first developer job', 'at GCA', '(2022 - present)']}></Event>                                                                              
+                            <Event icon={<MdOutlineSchool/>}  texts={['Persue a degree', 'at UoPeople', '(2022)']}></Event>  
+                            <Event icon={<MdOutlineWorkOutline/> } left  texts={['Landed a first developer job', 'at Su San', '(2022 - present)']}></Event>                                                                              
                         </div>
                     </motion.div>
                     {/* <div className='w-full sticky top-0 h-[60vh] flex items-center'>

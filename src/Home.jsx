@@ -43,7 +43,7 @@ export default function Home() {
       </div>
       <div className='section-margin'>
         <div ref={SERVICES} id='services'>
-          <Services></Services>
+          {/* <Services></Services> */}
         </div>
         <div ref={CONTACTME} id='contactme'>
           <Contactme></Contactme>

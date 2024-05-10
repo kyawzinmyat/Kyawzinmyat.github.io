@@ -13,7 +13,7 @@ function App() {
   });
   return (
     <motion.div
-
+      className='example'
     >
       {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
       <Navbar activePage='home'></Navbar>

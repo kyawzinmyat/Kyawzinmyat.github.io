@@ -5,7 +5,7 @@ import '../styles/aboutme.css'
 export default function Aboutme() {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
-    let [active, setActive] = useState('professional')
+    let [active, setActive] = useState('education')
     const { scrollYProgress } = useScroll(
         {
             target: ref,
@@ -66,7 +66,7 @@ export default function Aboutme() {
                                 <div className='p-[2em] w-full sm:w-10/12 text-left flex justify-center items-center'>
                                     <>
                                         <div className='font-mono font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text max-w-[80ch]'>
-                                            <p className='leading-9'>I'm currently 20 years old living in Kamayut Township, Yangon. Playing video games and learning about new technologies, such as networking, software, and computer architecture, are two of my passions. I'm pursuing a Bachelor in Computer Science at an online university right now.</p>
+                                            <p className='leading-9'>I'm currently 21 years old living in Kamayut Township, Yangon. Playing video games and learning about new technologies, such as networking, software, and computer architecture, are two of my passions. I'm pursuing a Bachelor in Computer Science at an online university right now.</p>
                                         </div>
                                     </>
                                 </div>
@@ -79,8 +79,13 @@ export default function Aboutme() {
                             <div className='p-[2em] w-full sm:w-10/12 text-left flex justify-center items-center'>
                                 <>
                                     <div className='font-md text-sm md:text-md lg:py[5em] py-[3em] about-me-text max-w-[80ch]'>
-                                        <p className='leading-9'>In 2019, I earned my high school diploma.
+                                        <p className='leading-1'>In 2019, I earned my high school diploma.
                                             At UCSY, I majored in computer science, but I no longer do so due to the political controversy. During the COVID pandemic, I took computer science courses like CS50 and Object-Oriented Java programming to advance my skills.</p>
+                                        <br/>
+                                        <p>
+                                        In 2022, I tried to pursue a Bachelor in Computer Science online from the University of the People, a regionally accredited university located in California, United States. I have a 3.7 GPA after completing 20 credits of coursework. However, because to the internet connection, lack of professors engagement, and the university's regulations, I've decided to fulfill my US goal by studying a BSC in person.
+                                            So, I applied to six community colleges and was accepted into each of them. Among them, I chose BMCC for its location, major, and amenities.
+                                        </p>
                                     </div>
                                 </>
                             </div>
