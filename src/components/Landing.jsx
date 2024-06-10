@@ -84,11 +84,11 @@ export default function Landing() {
                       <FaFacebook size='50px' className='hover:bg-white font-semibold rounded-full shadow-lg shadow-indigo-100/40'></FaFacebook>
                     </a>
                   </motion.div>
-                  <motion.div variants={iconsVar} className='absolute bottom-[100%] '>
+                  {/* <motion.div variants={iconsVar} className='absolute bottom-[100%] '>
                     <a href='https://www.linkedin.com/in/kyawzin-myat/' target='_blank'>
                       <FaLinkedinIn size='50px' color='white' className='hover:bg-violet-500 font-semibold rounded-full shadow-lg shadow-indigo-100/40 focus:outline-none'></FaLinkedinIn>
                     </a>
-                  </motion.div>
+                  </motion.div> */}
                 </motion.div>
               </motion.div>
             </motion.div>
